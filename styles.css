@@ -1,4 +1,13 @@
-H1{
+.article__header{
     color: red;
-    position: 50%;
+}
+.article__paragraph{
+    background-color: beige;
+}
+.article__image{
+    width: 189;
+    height: 255;
+}
+.article{
+    background-color: darkgray
 }
