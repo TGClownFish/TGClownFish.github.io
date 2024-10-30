@@ -6,7 +6,7 @@
             "type": "firefox",
             "request": "launch",
             "reAttach": true,
-            "file": "${workspaceFolder}/event.html"
+            "file": "${workspaceFolder}/index.html"
         }
     ]
 }
