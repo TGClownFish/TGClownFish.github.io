@@ -216,8 +216,8 @@ body{
     "order legend";
 }
 
-.reserve__checkbox {
-    grid-area: "checkbox";
+.reserve__check {
+    grid-area: "check";
     background-color: aqua;
 }
 
