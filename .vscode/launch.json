@@ -6,7 +6,7 @@
             "type": "firefox",
             "request": "launch",
             "reAttach": true,
-            "file": "D:/programming/srs/html/index.html"
+            "file": "D:/programming/src/html/index.html"
         }
     ]
 }
