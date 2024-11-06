@@ -21,7 +21,7 @@
 
 .reserve__order {
     grid-area: "order";
-    background-color:@black;
+    background-color: @black;
 }
 
 .reserve__legend {
