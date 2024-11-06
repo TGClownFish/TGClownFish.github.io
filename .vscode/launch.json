@@ -6,7 +6,7 @@
             "type": "firefox",
             "request": "launch",
             "reAttach": true,
-            "file": "${workspaceFolder}/events.html"
+            "file": "D:/programming/srs/html/index.html"
         }
     ]
 }
