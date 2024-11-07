@@ -27,7 +27,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
-  background-color: #dedede;
   color: #1f1e1e;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
