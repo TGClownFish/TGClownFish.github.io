@@ -10,6 +10,12 @@
   font-weight: 300;
   font-style: normal;
 }
+@font-face {
+  font-family: "Lora";
+  src: local("Lora-Medium.ttf"), url("../assets/fonts/Lora-Medium.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 html,
 body {
   width: 100%;
@@ -159,6 +165,7 @@ img {
 .event-card__time {
   font-size: 15px;
   display: block;
+  font-weight: 300;
 }
 .listing {
   -webkit-box-orient: vertical;
