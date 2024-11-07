@@ -18,20 +18,20 @@ import svgmin from "gulp-svgmin";
 import svgstore from "gulp-svgstore";
 import server from "browser-sync";
 const resources = {
-  html: "D:/programming/D:/programming/src/html/**/*.html",
-  jsDev: "D:/programming/src/scripts/dev/**/*.js",
-  jsVendor: "D:/programming/src/scripts/vendor/**/*.js",
-  images: "D:/programming/src/assets/images/**/*.{png,jpg,jpeg,webp,gif,svg}",
-  less: "D:/programming/src/styles/**/*.less",
-  svgSprite: "D:/programming/src/assets/svg-sprite/*.svg",
+  html: "src/html/**/*.html",
+  jsDev: "src/scripts/dev/**/*.js",
+  jsVendor: "src/scripts/vendor/**/*.js",
+  images: "src/assets/images/**/*.{png,jpg,jpeg,webp,gif,svg}",
+  less: "src/styles/**/*.less",
+  svgSprite: "src/assets/svg-sprite/*.svg",
   static: [
-    "D:/programming/src/assets/icons/**/*.*",
-    "D:/programming/src/assets/favicons/**/*.*",
-    "D:/programming/src/assets/fonts/**/*.{woff,woff2}",
-    "D:/programming/src/assets/video/**/*.{mp4,webm}",
-    "D:/programming/src/assets/audio/**/*.{mp3,ogg,wav,aac}",
-    "D:/programming/src/json/**/*.json",
-    "D:/programming/src/php/**/*.php"
+    "src/assets/icons/**/*.*",
+    "src/assets/favicons/**/*.*",
+    "src/assets/fonts/**/*.{woff,woff2}",
+    "src/assets/video/**/*.{mp4,webm}",
+    "src/assets/audio/**/*.{mp3,ogg,wav,aac}",
+    "src/json/**/*.json",
+    "src/php/**/*.php"
   ]
 };
 // Gulp Tasks:
@@ -40,7 +40,7 @@ function clean() {
 }
 function includeHtml() {
   return gulp
-    .src("D:/programming/src/html/*.html")
+    .src("src/html/*.html")
     .pipe(plumber())
     .pipe(
       include({
@@ -53,7 +53,7 @@ function includeHtml() {
 }
 function style() {
   return gulp
-    /src("D:/programming/src/styles/styles.less")
+    .src("src/styles/styles.less")
     .pipe(plumber())
     .pipe(less())
     .pipe(
@@ -71,7 +71,7 @@ function style() {
 }
 function js() {
   return gulp
-    .src("D:/programming/src/scripts/dev/*.js")
+    .src("src/scripts/dev/*.js")
     .pipe(plumber())
     .pipe(
       include({
