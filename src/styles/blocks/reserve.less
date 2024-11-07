@@ -6,24 +6,20 @@
     grid-template-areas: 
     "checkbox scheme"
     "order legend";
-}
-
-.reserve__check {
-    grid-area: "check";
-    background-color: aqua;
-}
-
-.reserve__scheme {
-    grid-area: "scheme";
-    background-color:chocolate;
-}
-
-.reserve__order {
-    grid-area: "order";
-    background-color: @black;
-}
-
-.reserve__legend {
-    grid-area: "legend";
-    background-color:chartreuse;
+    &__check {
+        grid-area: "check";
+        background-color: aqua;
+    }
+    &__scheme {
+        grid-area: "scheme";
+        background-color:chocolate;
+    }
+    &__order {
+        grid-area: "order";
+        background-color: @black;
+    }
+    &__legend {
+        grid-area: "legend";
+        background-color:chartreuse;
+    }
 }
