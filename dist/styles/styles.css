@@ -232,6 +232,7 @@ textarea:focus::placeholder {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 30px 60px;
 }
 .form__field {
   width: 100%;
@@ -247,6 +248,17 @@ textarea:focus::placeholder {
 }
 .form__group--w50 {
   width: calc(50% - 30px);
+}
+.form__section {
+  margin-bottom: 50px;
+}
+.form__title {
+  display: block;
+  margin: 0 0 10px;
+  color: #1f1e1e;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
 }
 .pp {
   -webkit-box-sizing: border-box;
