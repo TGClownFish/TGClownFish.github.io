@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="show-event-popup">
+<html lang="ru"><!--class="show-event-popup" -->
 
 <head>
   <meta charset="utf-8">
@@ -31,112 +31,20 @@
     </div>
   </header>
   <main class="main">
-    <!--<h2">арт — пространство</h2>
-    <h2>lenni</h2>
-    <h2>для людей, горящих сердцем и деломместо для настоящего</h2> -->
+    <H1 class="title sub-title">арт — пространство</H1>
+    <div class="title__lenni">
+      <svg width="1920" height="235">
+        <use xlink:href="assets/icons/symbols.svg#LENNI"></use>
+      </svg>
+    </div>
+    <H2 class="title sub-title">для людей, горящих сердцем и делом
+      <br />место для настоящего
+    </H2>
   </main>
   <footer class="page-footer">
     footer
   </footer>
-  <div class="pp" id="eventPP">
-    <div class="pp__wrapper">
-      <div class="pp__sticky-close">
-        <button type="button" title="Закрыть" class="pp__x-btn x-btn js-ppCloseBtn">
-          <svg class="x-btn__icon" width="12" height="12">
-            <use xlink:href="assets/icons/symbols.svg#x"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="pp__container">
-        <H2 class="pp__title">Заполните форму
-          <br />и мы подберем площадку
-        </H2>
-        <form class="pp__form form">
-          <div class="form__list">
-            <div class="form__field form__field--w50">
-              <div class="radio">
-                <span class="field__title">Формат мероприятия:</span>
-                <label class="radio__item">
-                  <input class="radio__input" type="radio" name="format" value="master-class" checked />
-                  <span class="radio__marker"></span>
-                  <span class="radio__label">Мастер-класс/семинар</span>
-                </label>
-                <label class="radio__item">
-                  <input class="radio__input" type="radio" name="format" value="consert" />
-                  <span class="radio__marker"></span>
-                  <span class="radio__label">Концерт/выступление</span>
-                </label>
-                <label class="radio__item">
-                  <input class="radio__input" type="radio" name="format" value="vistavka" />
-                  <span class="radio__marker"></span>
-                  <span class="radio__label">Выставка/показ</span>
-                </label>
-                <label class="radio__item">
-                  <input class="radio__input" type="radio" name="format" value="other" />
-                  <span class="radio__marker"></span>
-                  <span class="radio__label">Другое</span>
-                </label>
-              </div>
-            </div>
-            <div class="form__group form__group--w50">
-              <label class="field form__field form__field--mb30">
-                <span class="field__title">Планируемое количество посетителей:</span>
-                <select name="amount" class="field__select">
-                  <option value="20">до 20 человек</option>
-                  <option value="100">от 20 до 100 человек</option>
-                  <option value="500">от 100 до 500 человек</option>
-                  <option value="1000">более 500 человек</option>
-                </select>
-              </label>
-              <div class="field__date">
-                <span class="field__title">Дата проведения:</span>
-                <div class="field__date-inputs">
-                  <input type="text" class="field__date-input" placeholder="ДД" readonly />
-                  <input type="text" class="field__date-input" placeholder="ММ" readonly />
-                  <input type="text" class="field__date-input--w110 field__date-input" placeholder="ГГГГ" readonly />
-                </div>
-              </div>
-            </div>
-            <div class="form__section">
-              <h6 class="form__title"> Контактные данные:</h6>
-              <div class="form__list">
-                <label class="field form__field form__field--w50">
-                  <span class="field__label">Имя*</span>
-                  <input type="text" name="Имя" placeholder="Имя" class="field__input" required />
-                </label>
-                <label class="field form__field form__field--w50">
-                  <span class="field__label">Фамилия*</span>
-                  <input type="text" name="Фамилия" placeholder="Фамилия" class="field__input" required />
-                </label>
-                <label class="field form__field form__field--w50">
-                  <span class="field__label">Телефон*</span>
-                  <input type="tel" name="Телефон" placeholder="+7 (___) ___ __ __" class="field__input" required />
-                </label>
-                <label class="field form__field form__field--w50">
-                  <span class="field__label">Email*</span>
-                  <input type="email" name="Email" placeholder="Email" class="field__input" required />
-                </label>
-              </div>
-            </div>
-            <label class="field form__field">
-              <span class="field__title">Есть пожелания? Напишите нам:</span>
-              <textarea class="field__textarea" name="Пожелания"></textarea>
-            </label>
 
-            <label class="check">
-              <input type="checkbox" name="agree" class="check__input" required checked />
-              <span class="check__mark"></span>
-              <span class="check__label">Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных</span>
-            </label>
-          </div>
-          <div class="form__btns">
-            <button class="form__btn btn" type="submit">Отправить</button>
-            <button class="form__btn-close" type="button">Закрыть</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
 </body>
 
 </html>
