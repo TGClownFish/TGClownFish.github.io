@@ -184,10 +184,6 @@ textarea:focus::placeholder {
   font-size: 45px;
   font-family: "Lora", serif;
 }
-.title__lenni {
-  width: 100%;
-  min-height: 100%;
-}
 .field {
   display: -webkit-box;
   display: -ms-flexbox;
