@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="LENNI" viewBox="0 0 1920 325"><g fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="checkmark" viewBox="0 0 26 26"><g fill="none">
+    <circle cx="13" cy="13" r="13" fill="#1F1E1E"/>
+    <path d="M19.71 8.21a1 1 0 0 0-1.42 0l-7.45 7.46-3.13-3.14A1.02 1.02 0 1 0 6.29 14l3.84 3.84a1.002 1.002 0 0 0 1.42 0l8.16-8.16a1 1 0 0 0 0-1.47Z" fill="#fff"/>
+</g></symbol><symbol id="LENNI" viewBox="0 0 1920 325"><g fill="none">
     <path d="M485.389 317.073V0H0v325h647.345v-7.927H485.389ZM675.453 325h200.745v-7.927H713.443V159.935h126.765v-7.926H713.443V7.927H876V0H675.453v325ZM941.896 325V8.393c34.39 0 141.564 13.989 149.554 194.907V325h37.99V0h-37.99v143.615c-9.59-48.027-28.39-82.998-57.18-108.177C998.68 3.73 958.291 0 941.896 0h-37.99v325h37.99ZM1207.45 325V8.393c34.39 0 141.56 13.989 149.56 194.907V325H1395V0h-37.99v143.615c-9.6-48.027-28.4-82.998-57.19-108.177C1264.23 3.73 1223.84 0 1207.45 0h-37.99v325h37.99ZM1473 0h-37.99v325H1920V0h-447Z" fill="#1F1E1E"/>
 </g></symbol><symbol id="logo"><g fill="none">
     <path fill="#1F1E1E" d="M0 0h147v147H0z"/>

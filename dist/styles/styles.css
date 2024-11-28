@@ -264,6 +264,46 @@ textarea:focus::placeholder {
   display: flex;
   gap: 15px;
 }
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #1f1e1e;
+}
+.table__thead-th {
+  border: 1px solid #bfbfbf;
+  border-top: none;
+  height: 85px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  text-align: center;
+}
+.table__tr:nth-child(2n-1) {
+  background-color: rgba(31, 30, 30, 0.03);
+}
+.table__td {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+}
+.table__td:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+.table__tbody-th {
+  font-weight: 400;
+  border-left: none;
+  padding-left: 0;
+  text-align: left;
+}
+.table__tbody-th,
+.table__td {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #bfbfbf;
+  padding: 12px;
+  line-height: 1.3;
+}
 .form__list {
   display: -webkit-box;
   display: -ms-flexbox;
