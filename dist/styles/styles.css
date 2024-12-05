@@ -135,28 +135,41 @@ textarea:focus::placeholder {
   padding-left: 40px;
   padding-right: 40px;
 }
+.about__block1 {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-template-areas: "title title" "text text";
+  gap: 50px 60px;
+}
 .about__block2 {
   display: grid;
   grid-template-columns: 1fr 400px;
   grid-template-areas: "pic1 pic2" "title pic2" "text text";
   gap: 50px 60px;
 }
-.about__picture {
+.about__block2-picture1 {
   grid-area: pic1;
 }
 .about__subtitle {
   grid-area: title;
-  margin: 50px 0;
+  margin: 50px 0 0;
   font-size: 44px;
 }
 .about__text {
   grid-area: text;
-  margin-left: auto;
   margin: 0;
-  max-width: 87px;
+  margin-left: auto;
+  max-width: 870px;
 }
-.about__picture2 {
+.about__block2-picture2 {
   grid-area: pic2;
+  align-self: flex-end;
+}
+.about__block3 {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-template-areas: "pic3 text" "pic3 link";
+  gap: 50px 60px;
 }
 .about__block3-picture {
   -webkit-box-sizing: border-box;

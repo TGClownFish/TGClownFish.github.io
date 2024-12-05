@@ -2,31 +2,48 @@
     &__container {
         .container();
     }
+    &__block1 {
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        grid-template-areas: 
+        "title title"
+        "text text";
+        gap: 50px 60px;
+    }
     &__block2 {
         display: grid;
         grid-template-columns: 1fr 400px;
         grid-template-areas: 
         "pic1 pic2"
         "title pic2"
-        "text text";
+         "text text";
         gap: 50px 60px;
     }
-    &__picture {
+    &__block2-picture1 {
         grid-area: pic1;
     }
     &__subtitle {
         grid-area: title;
-        margin: 50px 0;
+        margin: 50px 0 0;
         font-size: 44px;
     }
     &__text {
         grid-area: text;
-        margin-left: auto;
         margin: 0;
-        max-width: 87px;
+        margin-left: auto;
+        max-width: 870px;
     }
-    &__picture2 {
+    &__block2-picture2 {
         grid-area: pic2;
+        align-self: flex-end;
+    }
+    &__block3 {
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        grid-template-areas: 
+        "pic3 text"
+        "pic3 link";
+        gap: 50px 60px;
     }
     &__block3-picture {
         box-sizing: border-box;
@@ -57,6 +74,9 @@
         left: 49px;
         width: calc(100% - 57px);
         object-fit: contain;
+        
+    }
+    &__block3-link {
         
     }
 }
