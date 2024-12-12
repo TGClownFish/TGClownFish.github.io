@@ -9,6 +9,7 @@
         "title title"
         "text text";
         gap: 50px 60px;
+        margin-top: 100px;
     }
     &__block2 {
         display: grid;
@@ -18,6 +19,7 @@
         "title pic2"
          "text text";
         gap: 50px 60px;
+        margin-top: 100px;
     }
     &__block2-picture1 {
         grid-area: pic1;
@@ -44,9 +46,11 @@
         "pic3 text"
         "pic3 link";
         gap: 50px 60px;
+        margin-top: 100px;
     }
     &__block3-picture {
         box-sizing: border-box;
+        grid-area: pic3;
         position: relative;
         padding: 18px 19px 0 49px;
         display: block;
@@ -77,6 +81,13 @@
         
     }
     &__block3-link {
-        
+        grid-area: link;
+        align-self: flex-end;
+    }
+    &__block3-text {
+        grid-area: text;
+        margin: 0;
+
+        max-width: 345px;
     }
 }
