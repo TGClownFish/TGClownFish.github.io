@@ -48,7 +48,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
-  background-image: url(../assets/images/noise.png), url(../assets/images/bg.png);
+  background-image: url(../assets/images/noize.jpg);
   background-position: 0 0, 0 0;
   background-size: auto, 100% auto;
   background-repeat: repeat, repeat-y;
@@ -296,6 +296,28 @@ textarea:focus::placeholder {
   font-weight: 400;
   font-size: 45px;
   font-family: "Lora", serif;
+}
+.title__container {
+  margin-top: 100px;
+}
+.title__lenni {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.title__i-want-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.title__btn--red {
+  background-color: #bc3324;
+  color: #ffffff;
+  border-color: transparent;
+}
+.title__btn--red:hover,
+.title__btn--red:active {
+  background-color: #1f1e1e;
+  color: #ffffff;
 }
 .field {
   display: -webkit-box;
