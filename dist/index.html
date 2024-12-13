@@ -45,23 +45,27 @@
   </header>
   <main class="main">
     <div class="title__container">
-      <H1 class="title sub-title">арт — пространство</H1>
+      <H1 class="title">арт — пространство</H1>
       <div class="title__lenni">
         <svg width="1920" height="325">
           <use xlink:href="assets/icons/symbols.svg#LENNI"></use>
         </svg>
       </div>
-      <H2 class="title sub-title">для людей, горящих сердцем и делом
+      <H2 class="title">для людей, горящих сердцем и делом
         <br />место для настоящего
       </H2>
       <div class="title__i-want-container">
-        <div class="sub-title--small">Я хочу:</div>
-        <a href="#" class="title__btn--red btn">Провести мероприятие</a>
-        <a href="#" class="btn">Стать арендатором</a>
+        <div class="title title--small">Я хочу:</div>
+        <div class="title-container__btn-container">
+          <a href="#" class="title__btn--red btn">Провести мероприятие</a>
+          <div class="title__empty-block"></div>
+          <a href="#" class="btn">Стать арендатором</a>
+        </div>
       </div>
     </div>
     <div class="about">
       <div class="about__container">
+        <H2 class="about__header">О нас</H2>
         <div class="about__block1">
           <h3 class="about__subtitle">Проект «Millennials»</h3>
           <p class="about__text">
@@ -91,12 +95,13 @@
           <picture class="about__block3-picture">
             <img src="assets/images/pic(2).jpg" alt="about3" class="about__block3-img" />
           </picture>
-          <p class="about__block3-text">Мы уже успешно организовали и
+          <div class="about__block3-text">Мы уже успешно организовали и
             <br />провели более 100 проектов.
             <br />Посмотрите, как это было классно.
-          </p>
-          <a href="#" class="about__block3-link">Смотреть
-            <svg width="91" height="60">
+          </div>
+          <a href="#" class="about__block3-link">
+            <div class="about__block3-link-text">Смотреть</div>
+            <svg class="about__block3-link-arrow" width="91" height="60">
               <use xlink:href="assets/icons/symbols.svg#arrow"></use>
             </svg>
           </a>
@@ -147,7 +152,7 @@
         <a href="#" class="page-footer__block2-links">Cookies</a>
         <div class="page-footer__copirite">© Millennials 2022</div>
         <div class="page-footer__create-link">
-          <svg class="page-header__logo-icon" width="24" height="24">
+          <svg class="page-header__logo-icon" width="56" height="17">
             <use xlink:href="assets/icons/symbols.svg#tagree"></use>
           </svg>
         </div>

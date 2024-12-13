@@ -18,15 +18,35 @@ margin-top: 100px;
     margin-bottom: 70px;
 }
 .title__i-want-container {
+    margin-top: 100px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title--small {
+    font-size: 22px;
+    margin-bottom: 46px;
+    font-weight: 400;
+    //align-self: flex-start;
+}
+.title-container__btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.title__empty-block {
+    width: 106px;
 }
 .title__btn--red {
     background-color: @orange;
     color: @white;
+    border: none;
     border-color: none;
     transition: background-color 0.2s;
     &:hover {
-        background-color: @red;
+        background-color: @red_dark;
     }
 }
 

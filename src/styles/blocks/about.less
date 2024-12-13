@@ -2,6 +2,21 @@
     &__container {
         .container();
     }
+    &__header {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        margin: 187px auto 0px;
+        padding: 8px;
+        width: 624px;
+        height: 62px;
+        background-color: @black;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: @font2;
+        font-size: 36px;
+        color: @white;
+        }
     &__block1 {
         display: grid;
         grid-template-columns: 1fr 400px;
@@ -42,10 +57,12 @@
     &__block3 {
         display: grid;
         grid-template-columns: 1fr 400px;
+        grid-template-rows: 68px 75px 60px;
         grid-template-areas: 
         "pic3 text"
+        "pic3 text"
         "pic3 link";
-        gap: 50px 60px;
+        gap: 80px 60px ;
         margin-top: 100px;
     }
     &__block3-content {
@@ -84,13 +101,36 @@
         
     }
     &__block3-link {
+        
         grid-area: link;
+        height: 60px;
         align-self: flex-end;
+        display: flex;
+        text-decoration: none;
+        transition: currentColor 0.2s, color 0.2s;
+        &:hover,
+        &:active {
+            //currentColor: @red;
+            color: @red;
+    }
     }
     &__block3-text {
         grid-area: text;
+        align-self: flex-end;
+        font-weight: 400px;
+        font-size: 18px;
         margin: 0;
-
         max-width: 345px;
+        margin-bottom: 0px;
+    }
+    &__block3-link-text {
+        align-self: center;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    &__block3-link-arrow {
+        margin-right: 0px;
+        margin-left: auto;
     }
 }
