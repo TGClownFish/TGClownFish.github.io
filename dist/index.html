@@ -56,7 +56,7 @@
       </H2>
       <div class="title__i-want-container">
         <div class="title title--small">Я хочу:</div>
-        <div class="title-container__btn-container">
+        <div class="title__btn-container">
           <a href="#" class="title__btn--red btn">Провести мероприятие</a>
           <div class="title__empty-block"></div>
           <a href="#" class="btn">Стать арендатором</a>
@@ -65,7 +65,7 @@
     </div>
     <div class="about">
       <div class="about__container">
-        <H2 class="about__header">О нас</H2>
+        <H2 class="header about__header">О нас</H2>
         <div class="about__block1">
           <h3 class="about__subtitle">Проект «Millennials»</h3>
           <p class="about__text">
@@ -108,57 +108,88 @@
         </div>
       </div>
     </div>
-  </main>
-  <footer class="page-footer">
-    <div class="page-footer__liners"></div>
-    <div class="page-footer__block1">
-      <div class="page-footer__block1-links">
-        <a href="#" class="page-footer__block1-link">Календарь мероприятий</a>
-        <a href="#" class="page-footer__block1-link">Провести мероприятие</a>
-        <a href="#" class="page-footer__block1-link">Стать арендатором</a>
-        <a href="#" class="page-footer__block1-link">Наши проекты</a>
-        <a href="#" class="page-footer__block1-link">Контакты</a>
-      </div>
-      <form class="page-footer__subscribe-form subscribe-form">
-        <h4 class="subscribe-form__title"></h4>
-        <div class="subscribe-form__wrapper">
-          <div class="subscribe-form__field-wrapper">
-            <input name="email" type="email" placeholder="Email" class="subscribe-form-input" required />
-            <button type="submit" class="subscribe-form__submit">Подписаться</button>
+    <!-- <svg class="page-header__logo-icon" width="1920" height="1236">
+    <use xlink:href="assets/icons/symbols.svg#background"></use>
+</svg> -->
+    <div class="events-short">
+      <div class="events-short__container">
+        <h2 class="header events-short__header">МЕРОПРИЯТИЯ</h2>
+        <div class="listing__events-list">
+          <!-- prettier-ignore -->
+          <article class="event-card  listing__event-card">
+            <a href="event.html" class="event-card__link">
+              <picture class="event-card__picture">
+                <!-- <source type="image/webp" media="(max-width: 450px)" srcset="assets/images/events/nirvana.jpg"/>
+        <source media="(max-width: 450px)" srcset="assets/images/events/nirvana.jpg"/>
+        <source type="image/webp"  media="(max-width: 1169px)" srcset="assets/images/events/nirvana.jpg_tablet"/>
+        <source media="(max-width: 1169px)" srcset="assets/images/events/nirvana.jpg_tablet"/>
+        <source type="image/webp" srcset="assets/images/events/nirvana.jpg_webp"/> -->
+
+                <img src="assets/images/events/nirvana.jpg" alt="nirvana" class="event-card__img" />
+              </picture>
+              <h4 class="event-card__title">Собираемся и слушаем альбом Nirvana</h4>
+              <p class="event-card__description">Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
+              <time datetime="2022-12-07T18:00" class="event-card__time">07.12.2022 | начало 18.00</time>
+            </a>
+          </article>
+          <article class="event-card  listing__event-card">
+            <a href="event.html" class="event-card__link">
+              <picture class="event-card__picture">
+                <!-- <source type="image/webp" media="(max-width: 450px)" srcset="assets/images/events/HowStuffWorks.jpg"/>
+        <source media="(max-width: 450px)" srcset="assets/images/events/HowStuffWorks.jpg"/>
+        <source type="image/webp"  media="(max-width: 1169px)" srcset="assets/images/events/HowStuffWorks.jpg_tablet"/>
+        <source media="(max-width: 1169px)" srcset="assets/images/events/HowStuffWorks.jpg_tablet"/>
+        <source type="image/webp" srcset="assets/images/events/HowStuffWorks.jpg_webp"/> -->
+
+                <img src="assets/images/events/HowStuffWorks.jpg" alt="stuff" class="event-card__img" />
+              </picture>
+              <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
+              <p class="event-card__description">Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.</p>
+              <time datetime="2022-12-14T18:30" class="event-card__time">14.12.2022 | начало 18.30</time>
+            </a>
+          </article>
+          <article class="event-card  listing__event-card">
+            <a href="event.html" class="event-card__link">
+              <picture class="event-card__picture">
+                <!-- <source type="image/webp" media="(max-width: 450px)" srcset="assets/images/events/Sade.jpg"/>
+        <source media="(max-width: 450px)" srcset="assets/images/events/Sade.jpg"/>
+        <source type="image/webp"  media="(max-width: 1169px)" srcset="assets/images/events/Sade.jpg_tablet"/>
+        <source media="(max-width: 1169px)" srcset="assets/images/events/Sade.jpg_tablet"/>
+        <source type="image/webp" srcset="assets/images/events/Sade.jpg_webp"/> -->
+
+                <img src="assets/images/events/Sade.jpg" alt="sade" class="event-card__img" />
+              </picture>
+              <h4 class="event-card__title">Вечер | The Best of Sades</h4>
+              <p class="event-card__description">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.</p>
+              <time datetime="2022-12-16T20:00" class="event-card__time">16.12.2022 | начало 20.00</time>
+            </a>
+          </article>
+        </div>
+        <div class="events-short__nav">
+          <a href="#" class="events-short__arrow">
+            <svg class="events-short__arrow-image" width="91" height="60" transform="scale(-1,1)">
+              <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+            </svg>
+          </a>
+          <div class="events-short__nav-line">
+            <span class="events-short__line"></span>
+            <span class="events-short__line"></span>
+            <span class="events-short__line events-short__line--black"></span>
+            <span class="events-short__line"></span>
+            <span class="events-short__line"></span>
           </div>
-          <label class="subscribe-form__check check">
-            <input name="agree" type="checkbox" class="check__input" required checked />
-            <span class="check__mark"></span>
-            <span class="ckeck__label">Согласен на обработку персональных данных</span>
-          </label>
+          <a href="#" class="events-short__arrow">
+            <svg class="events-short__arrow-image" width="91" height="60">
+              <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+            </svg>
+          </a>
         </div>
-      </form>
-    </div>
-    <div class="page-footer__block2">
-      <div class="page-footer__socials socials">
-        <a href="#" class="page-footer__social social">
-          <svg class="page-header__logo-icon" width="24" height="24">
-            <use xlink:href="assets/icons/symbols.svg#insta"></use>
-          </svg>
-        </a>
-        <a href="#" class="page-footer__social socials">
-          <svg class="page-header__logo-icon" width="24" height="24">
-            <use xlink:href="assets/icons/symbols.svg#vk"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="page-footer__block2-links">
-        <a href="#" class="page-footer__block2-links">Политика конфиденциальности</a>
-        <a href="#" class="page-footer__block2-links">Cookies</a>
-        <div class="page-footer__copirite">© Millennials 2022</div>
-        <div class="page-footer__create-link">
-          <svg class="page-header__logo-icon" width="56" height="17">
-            <use xlink:href="assets/icons/symbols.svg#tagree"></use>
-          </svg>
-        </div>
+        <a href="#" class="events-short__see-all">Смотреть все</a>
       </div>
     </div>
-  </footer>
+
+  </main>
+
 
 </body>
 
