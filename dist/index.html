@@ -21,7 +21,7 @@
       </a>
       <nav class="page-header__nav">
         <a href="events.html" class="page-header__nav-link">Мероприятия</a>
-        <a href="#" class="page-header__nav-link">Блог</a>
+        <a href="default.html" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
 
@@ -65,7 +65,7 @@
     </div>
     <div class="about">
       <div class="about__container">
-        <H2 class="header about__header">О нас</H2>
+        <H2 class="header header__h2 about__header">О нас</H2>
         <div class="about__block1">
           <h3 class="about__subtitle">Проект «Millennials»</h3>
           <p class="about__text">
@@ -113,7 +113,7 @@
 </svg> -->
     <div class="events-short">
       <div class="events-short__container">
-        <h2 class="header events-short__header">МЕРОПРИЯТИЯ</h2>
+        <h2 class="header header__h2 events-short__header">МЕРОПРИЯТИЯ</h2>
         <div class="listing__events-list">
           <!-- prettier-ignore -->
           <article class="event-card  listing__event-card">
@@ -189,7 +189,56 @@
     </div>
 
   </main>
-
+  <footer class="page-footer">
+    <div class="page-footer__liners"></div>
+    <div class="page-footer__block1">
+      <div class="page-footer__block1-links">
+        <a href="#" class="page-footer__block1-link">Календарь мероприятий</a>
+        <a href="#" class="page-footer__block1-link">Провести мероприятие</a>
+        <a href="#" class="page-footer__block1-link">Стать арендатором</a>
+        <a href="#" class="page-footer__block1-link">Наши проекты</a>
+        <a href="#" class="page-footer__block1-link">Контакты</a>
+      </div>
+      <form class="page-footer__subscribe-form subscribe-form">
+        <h4 class="subscribe-form__title">Подпишись и будь в курсе происходящего</h4>
+        <div class="subscribe-form__wrapper">
+          <div class="subscribe-form__field-wrapper">
+            <input name="email" type="email" placeholder="Email" class="subscribe-form-input field__input" required />
+            <button type="submit" class="subscribe-form__submit ">Подписаться</button>
+          </div>
+          <label class="subscribe-form__check check">
+            <input name="agree" type="checkbox" class="check__input" required checked />
+            <span class="check__mark"></span>
+            <span class="check__label">Согласен на обработку персональных данных</span>
+          </label>
+        </div>
+      </form>
+    </div>
+    <div class="page-footer__block2">
+      <div class="page-footer__socials socials">
+        <!-- <a href="#" class="page-footer__social social">
+                <svg class="page-header__logo-icon" width="58" height="58">
+                    <use xlink:href="assets/icons/symbols.svg#insta"></use>
+                </svg>
+            </a>
+            <a href="#" class="page-footer__social socials">
+                <svg class="page-header__logo-icon" width="58" height="58">
+                    <use xlink:href="assets/icons/symbols.svg#vk"></use>
+                </svg>
+            </a> -->
+      </div>
+      <div class="page-footer__block2-links">
+        <a href="#" class="page-footer__block2-links">Политика конфиденциальности</a>
+        <a href="#" class="page-footer__block2-links">Cookies</a>
+        <div class="page-footer__copirite">© Millennials 2022</div>
+        <div class="page-footer__create-link">Создание и продвижение
+          <!-- <svg class="page-header__logo-icon" width="56" height="17">
+                    <use xlink:href="assets/icons/symbols.svg#tagree"></use>
+                </svg>
+            </div> -->
+        </div>
+      </div>
+  </footer>
 
 </body>
 

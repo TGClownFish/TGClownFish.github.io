@@ -28,7 +28,14 @@
             }
           }
         }
+        &--red {
+          &:checked {
+            & ~ .check__mark {
+              background-color: @red;
+            }
+        }
       }
+    }
     &__mark {
         box-sizing: border-box;
         display: block;
@@ -38,6 +45,12 @@
         width: 24px;
         height: 24px;
         border: 1px solid @black;
+        &--red {
+          border: 1px solid @red;
+        }
+        &--gray {
+          border: 1px solid @gray_dark;
+        }
     }
     &__label {
         margin-left: 15px;
@@ -48,5 +61,11 @@
           font-size: 14px;
           line-height: 19px;
         }
+        &--red {
+          color: @red;
+        }
+        &--gray {
+          color: @gray_dark;
+        }
     }
-}
+  }

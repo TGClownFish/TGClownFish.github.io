@@ -1,4 +1,6 @@
 .reserve {
+    .container;
+    margin-top: 80px;
     display: grid;
     grid-template-columns: 405px 1fr;
     gap: 65px 11%;
@@ -6,19 +8,32 @@
     grid-template-areas: 
     "checkbox scheme"
     "order legend";
+
     &__check {
         grid-area: "check";
-        background-color: aqua;
+    }
+    &__check-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__check-label {
+        font-size: 16px;
+        font-weight: 400;
     }
     &__scheme {
+        display: flex;
+        flex-direction: column;
         grid-area: "scheme";
+    }
+    &__header {
+        align-self: center;
+        margin-bottom: 40px;
     }
     &__order {
         grid-area: "order";
-        background-color: @black;
     }
     &__legend {
         grid-area: "legend";
-        background-color:chartreuse;
     }
 }

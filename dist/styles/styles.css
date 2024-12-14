@@ -48,7 +48,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
-  background-image: url(../assets/images/noize.jpg);
+  background-image: url(../assets/images/noise.png);
+  background-color: #dedede;
   background-position: 0 0, 0 0;
   background-size: auto, 100% auto;
   background-repeat: repeat, repeat-y;
@@ -134,16 +135,27 @@ textarea:focus::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 187px auto 0px;
-  padding: 8px;
-  width: 624px;
-  height: 62px;
+  margin: auto;
   background-color: #1f1e1e;
   text-transform: uppercase;
-  font-weight: 500;
   font-family: "Lora", serif;
-  font-size: 36px;
   color: #ffffff;
+}
+.header__h2 {
+  width: 624px;
+  height: 62px;
+  font-size: 36px;
+  font-weight: 500;
+  padding: 8px;
+}
+.header__h4 {
+  width: 162px;
+  height: 34px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 40px;
 }
 .subscribe-form {
   max-width: 410px;
@@ -159,14 +171,23 @@ textarea:focus::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 15px;
   height: 50px;
 }
 .subscribe-form__field-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: 1;
           flex-flow: 1;
+  -ms-flex-direction: row;
+      flex-direction: row;
 }
 .subscribe-form__input {
   -webkit-box-sizing: border-box;
@@ -174,11 +195,15 @@ textarea:focus::placeholder {
   width: 100%;
   height: 100%;
   background-color: #ffffff;
-  border-radius: 0;
+  font-size: 14px;
+  font-weight: 600px;
   padding: 15px 28px;
   line-height: 1.2;
   color: #1f1e1e;
   border: none;
+  border-radius: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 .subscribe-form__input::-webkit-input-placeholder {
   color: #dedede;
@@ -201,13 +226,18 @@ textarea:focus::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   border-radius: 0;
   outline: none;
   height: 100%;
@@ -215,6 +245,9 @@ textarea:focus::placeholder {
   padding: 15px 23px;
   background-color: #1f1e1e;
   color: #ffffff;
+}
+.events-short {
+  margin-top: 210px;
 }
 .events-short__container {
   -webkit-box-sizing: border-box;
@@ -1119,6 +1152,9 @@ textarea:focus::placeholder {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+.check__input--red:checked ~ .check__mark {
+  background-color: #bc3324;
+}
 .check__mark {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1130,6 +1166,12 @@ textarea:focus::placeholder {
   height: 24px;
   border: 1px solid #1f1e1e;
 }
+.check__mark--red {
+  border: 1px solid #bc3324;
+}
+.check__mark--gray {
+  border: 1px solid #bfbfbf;
+}
 .check__label {
   margin-left: 15px;
   font-weight: 300;
@@ -1139,6 +1181,12 @@ textarea:focus::placeholder {
 .check__label--s {
   font-size: 14px;
   line-height: 19px;
+}
+.check__label--red {
+  color: #bc3324;
+}
+.check__label--gray {
+  color: #bfbfbf;
 }
 .event-card {
   display: -webkit-box;
@@ -1261,6 +1309,13 @@ textarea:focus::placeholder {
   margin: 70px auto 0;
 }
 .reserve {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1414px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 80px;
   display: grid;
   grid-template-columns: 405px 1fr;
   gap: 65px 11%;
@@ -1269,18 +1324,41 @@ textarea:focus::placeholder {
 }
 .reserve__check {
   grid-area: "check";
-  background-color: aqua;
+}
+.reserve__check-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.reserve__check-label {
+  font-size: 16px;
+  font-weight: 400;
 }
 .reserve__scheme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   grid-area: "scheme";
+}
+.reserve__header {
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-bottom: 40px;
 }
 .reserve__order {
   grid-area: "order";
-  background-color: #1f1e1e;
 }
 .reserve__legend {
   grid-area: "legend";
-  background-color: chartreuse;
 }
 .events__listing {
   -webkit-box-sizing: border-box;
@@ -1441,6 +1519,7 @@ textarea:focus::placeholder {
   padding-bottom: 75px;
 }
 .page-footer__liners {
+  margin-top: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1457,10 +1536,12 @@ textarea:focus::placeholder {
   height: 2px;
 }
 .page-footer__liners::before {
-  background-color: linear-gradient(270deg, #1C1b1b 0%, rgba(255, 255, 255, 0) 82.86%);
+  background: -webkit-gradient(linear, right top, left top, from(#1C1B1B), color-stop(82.86%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, #1C1B1B 0%, rgba(255, 255, 255, 0) 82.86%);
 }
 .page-footer__liners::after {
-  background-color: linear-gradient(90deg, #1C1b1b 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#1C1B1B), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, #1C1B1B 0%, rgba(255, 255, 255, 0) 100%);
 }
 .page-footer__block1 {
   display: -webkit-box;
@@ -1566,6 +1647,10 @@ textarea:focus::placeholder {
     padding-right: 30px;
   }
   .listing {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .reserve {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -1736,6 +1821,10 @@ textarea:focus::placeholder {
     display: flex;
   }
   .listing {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .reserve {
     padding-left: 20px;
     padding-right: 20px;
   }
