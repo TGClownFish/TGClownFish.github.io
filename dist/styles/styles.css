@@ -1273,7 +1273,6 @@ textarea:focus::placeholder {
 }
 .reserve__scheme {
   grid-area: "scheme";
-  background-color: chocolate;
 }
 .reserve__order {
   grid-area: "order";
