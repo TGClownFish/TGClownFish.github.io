@@ -1519,6 +1519,7 @@ textarea:focus::placeholder {
           align-items: center;
 }
 .listing__events-list {
+  margin-top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1603,6 +1604,16 @@ textarea:focus::placeholder {
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
+  margin-top: 150px;
+}
+.event {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1414px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .event__header {
   display: -webkit-box;
@@ -1623,6 +1634,7 @@ textarea:focus::placeholder {
   font-family: "Lora", serif;
   font-size: 70px;
   font-weight: 500;
+  margin-bottom: 80px;
 }
 .event__image-container {
   display: -webkit-box;
@@ -1636,7 +1648,6 @@ textarea:focus::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: chartreuse;
 }
 .event__header-sub {
   font-family: "mak", serif;
@@ -1940,6 +1951,10 @@ textarea:focus::placeholder {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .event {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   .page-header__container {
     padding-left: 30px;
     padding-right: 30px;
@@ -2137,6 +2152,10 @@ textarea:focus::placeholder {
     padding-right: 20px;
   }
   .reserve {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .event {
     padding-left: 20px;
     padding-right: 20px;
   }
