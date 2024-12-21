@@ -271,6 +271,12 @@ textarea:focus::placeholder {
   padding: 15px 23px;
   background-color: #1f1e1e;
   color: #ffffff;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.subscribe-form__submit:hover {
+  background-color: #bc3324;
+  cursor: pointer;
 }
 .blog-listing {
   -webkit-box-sizing: border-box;
@@ -1565,6 +1571,35 @@ textarea:focus::placeholder {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.listing__events-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  margin: -50px auto 150px;
+  font-weight: 600;
+  color: #1f1e1e;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.listing__events-link:hover {
+  cursor: pointer;
+  color: #bc3324;
+}
+.listing__description {
+  width: 868px;
+  margin-top: 150px;
+  margin-bottom: 60px;
+  font-weight: 400;
+}
 .listing__event-card {
   width: calc(33.333% - 40px);
   margin: 0 0 60px;
@@ -1575,6 +1610,44 @@ textarea:focus::placeholder {
 }
 .listing__more-btn {
   margin: 70px auto 0;
+}
+.listing__i-want {
+  margin-top: 50px;
+}
+.listing__bottom {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1414px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 67px;
+}
+.listing__bottom-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 401px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.listing__bottom-element-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.listing__bottom-element-desc {
+  text-align: center;
 }
 .reserve {
   -webkit-box-sizing: border-box;
@@ -2018,6 +2091,10 @@ textarea:focus::placeholder {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .listing__bottom {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   .reserve {
     padding-left: 30px;
     padding-right: 30px;
@@ -2219,6 +2296,10 @@ textarea:focus::placeholder {
     display: flex;
   }
   .listing {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .listing__bottom {
     padding-left: 20px;
     padding-right: 20px;
   }
