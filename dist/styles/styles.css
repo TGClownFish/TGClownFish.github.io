@@ -201,7 +201,6 @@ textarea:focus::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 15px;
   height: 50px;
 }
 .subscribe-form__field-wrapper {
@@ -214,6 +213,7 @@ textarea:focus::placeholder {
           flex-flow: 1;
   -ms-flex-direction: row;
       flex-direction: row;
+  margin-bottom: 15px;
 }
 .subscribe-form__input {
   -webkit-box-sizing: border-box;
@@ -390,20 +390,17 @@ textarea:focus::placeholder {
           align-items: center;
   gap: 6px;
 }
-.events-short__events-short__arrow {
+.events-short__arrow {
   font-size: 0px;
   margin-left: 20px;
   margin-right: 20px;
-  -webkit-transform: fill 0.2s;
-      -ms-transform: fill 0.2s;
-          transform: fill 0.2s;
+  -webkit-transition: currentColor 0.2s, color 0.2s;
+  transition: currentColor 0.2s, color 0.2s;
 }
-.events-short__events-short__arrow:hover {
+.events-short__arrow:hover {
   cursor: pointer;
-  fill: #bc3324;
-}
-.events-short__arrow-image:hover {
-  stroke: #bc3324;
+  currentColor: #bc3324;
+  color: #bc3324;
 }
 .events-short__line {
   display: inline-block;
@@ -436,6 +433,41 @@ textarea:focus::placeholder {
 }
 .article__content {
   max-width: 880px;
+}
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.socials__link {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: #1f1e1e;
+  color: #ffffff;
+  font-size: 0;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.socials__link:active {
+  background-color: #bc3324;
+}
+.socials__link:last-child {
+  margin-right: 0;
+}
+.socials__icon {
+  margin: auto;
+  cursor: pointer;
 }
 .about__container {
   -webkit-box-sizing: border-box;
@@ -539,6 +571,7 @@ textarea:focus::placeholder {
 }
 .about__block3-link:hover,
 .about__block3-link:active {
+  currentColor: #bc3324;
   color: #bc3324;
 }
 .about__block3-text {
@@ -788,7 +821,7 @@ textarea:focus::placeholder {
   font-size: 0;
   text-decoration: none;
 }
-.article-card__link:hover ~ .article-card__info {
+.article-card__link:hover ~ .article-card__info .article-card__title-link {
   color: #bc3324;
   text-decoration-color: #bc3324;
 }
@@ -861,7 +894,12 @@ textarea:focus::placeholder {
   color: inherit;
   font-weight: 600;
   font-size: 24px;
-  line-height: 22px;
+  line-height: 33px;
+}
+.article-card__description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 33px;
 }
 .article-card__arrow {
   position: absolute;
@@ -1822,10 +1860,12 @@ textarea:focus::placeholder {
   height: 2px;
 }
 .page-footer__liners::before {
+  margin-right: 50px;
   background: -webkit-gradient(linear, right top, left top, from(#1C1B1B), color-stop(82.86%, rgba(255, 255, 255, 0)));
   background: linear-gradient(270deg, #1C1B1B 0%, rgba(255, 255, 255, 0) 82.86%);
 }
 .page-footer__liners::after {
+  margin-left: 50px;
   background: -webkit-gradient(linear, left top, right top, from(#1C1B1B), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(90deg, #1C1B1B 0%, rgba(255, 255, 255, 0) 100%);
 }
@@ -1882,6 +1922,22 @@ textarea:focus::placeholder {
 }
 .page-footer__block2-links {
   grid-area: links;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 80px;
+}
+.page-footer__block2-link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 600;
+  color: #1f1e1e;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.page-footer__block2-link:active {
+  color: #bc3324;
 }
 .page-footer__copyright {
   grid-area: copyright;
@@ -1889,6 +1945,21 @@ textarea:focus::placeholder {
 }
 .page-footer__create {
   grid-area: create;
+  margin-left: auto;
+  align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 15px;
+  font-weight: 600;
+}
+.page-footer__create-link {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  font-size: 0;
 }
 @media (max-width: 1659px){
   .width_624 {
@@ -2205,7 +2276,13 @@ textarea:focus::placeholder {
   }
 }
 @media (hover: hover){
+  .socials__link:hover {
+    background-color: #bc3324;
+  }
   .page-footer__block1-link:hover {
+    color: #bc3324;
+  }
+  .page-footer__block2-link:hover {
     color: #bc3324;
   }
 }

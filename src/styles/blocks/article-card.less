@@ -18,8 +18,10 @@
         text-decoration: none;
         &:hover {
             & ~ .article-card__info {
-                color: @red;
-                text-decoration-color: @red;
+                .article-card__title-link {
+                    color: @red;
+                    text-decoration-color: @red;
+                }
             }
         }
     }
@@ -74,14 +76,19 @@
         &:hover {
             color: @red;
             text-decoration-color: @red;
-            }
         }
+    }
     &__title {
         margin: 0;
         color: inherit;
         font-weight: 600;
         font-size: 24px;
-        line-height: 22px;
+        line-height: 33px;
+    }
+    &__description {
+        margin: 0;
+        font-size: 16px;
+        line-height: 33px;
     }
     &__arrow {
         position: absolute;

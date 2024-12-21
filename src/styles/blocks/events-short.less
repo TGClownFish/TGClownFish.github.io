@@ -23,19 +23,15 @@
         gap: 6px;
     }
 
-    &__events-short__arrow {
+    &__arrow {
         font-size: 0px;
         margin-left: 20px;
         margin-right: 20px;
-        transform: fill 0.2s;
+        transition: currentColor 0.2s, color 0.2s;
         &:hover {
             cursor: pointer;
-            fill: @red;
-        }
-    }
-    &__arrow-image {
-        &:hover {
-            stroke: @red;
+            currentColor: @red;
+            color: @red;
         }
     }
 
