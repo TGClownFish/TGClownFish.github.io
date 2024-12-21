@@ -24,4 +24,15 @@
         background-color: @black;
         color: @white;
     }
+    &--red {
+        background-color: @orange;
+        color: @white;
+        border: none;
+        border-color: none;
+        transition: background-color 0.2s, color 0.2s;
+        &:hover {
+            background-color: @red_dark;
+            color: @white;
+        }
+    }
 }

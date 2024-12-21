@@ -5,6 +5,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        margin-top: 38px;
     }
     &__header-main {
         font-family: @font2;
@@ -18,16 +19,43 @@
         flex-direction: row;
         gap: 58px;
         align-items: center;
+        margin-bottom: 80px;
+    }
+    &__header-sub-container {
+        display: flex;
+        flex-direction: column;
+        &::before,
+        &::after {
+            content: '';
+            flex-grow: 1;
+            height: 1px;
+            background: linear-gradient(270deg, #1C1B1B 0%, rgba(255, 255, 255, 0) 82.86%);
+        }
+        &:last-child {
+            &::before,
+            &::after {
+                transform: scale(-1,1);
+            }
+        }
+        &::before {
+            margin-bottom: 12px;
+        }
+        &::after {
+            margin-top: 12px;
+        }
     }
     &__header-sub {
         font-family: @font3;
-        display: flex;
-        flex-direction: column;
         &--top {
             font-size: 30px;
         }
         &--bottom {
             font-size: 16px;
         }
+    }
+    &__header-sub-line {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
     }
 }

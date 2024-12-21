@@ -121,6 +121,17 @@
         font-size: 0;
     }
     &__create-icon {
-
+        transition: color 0.2s;
+        &:active {
+            color: @red;
+            cursor: pointer;
+        }
+        &:hover {
+            @media (hover : hover)
+            {
+                color: @red;
+                cursor: pointer;
+            }
+        }
     }
 }
