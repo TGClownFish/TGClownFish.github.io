@@ -298,6 +298,7 @@ textarea:focus::placeholder {
   text-decoration: none;
   color: #1f1e1e;
   float: right;
+  margin-top: 50px;
 }
 .blog-listing__link:hover {
   color: #bc3324;
@@ -310,7 +311,7 @@ textarea:focus::placeholder {
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
-  margin-top: 78px;
+  margin-top: 200px;
   margin-bottom: 150px;
 }
 .contacts__wrapper {
@@ -954,6 +955,15 @@ textarea:focus::placeholder {
   line-height: 1.3;
   text-align: center;
 }
+.table__head-th:first-child {
+  border-left: none;
+}
+.table__head-th:last-child {
+  border-right: none;
+}
+.table__tr {
+  border-left: none;
+}
 .table__tr:nth-child(2n-1) {
   background-color: rgba(31, 30, 30, 0.03);
 }
@@ -962,15 +972,20 @@ textarea:focus::placeholder {
   font-size: 16px;
   text-align: center;
 }
+.table__td:first-child {
+  border-left: none;
+}
 .table__td:last-child {
   border-right: none;
   padding-right: 0;
 }
 .table__body-th {
   font-weight: 400;
-  border-left: none;
   padding-left: 0;
   text-align: left;
+}
+.table__body-th:first-child {
+  border-left: none;
 }
 .table__body-th,
 .table__td,
@@ -986,8 +1001,15 @@ textarea:focus::placeholder {
   font-size: 0px;
   border-bottom: none;
 }
+.table__footer-th:first-child {
+  border-left: none;
+}
+.table__footer-th:last-child {
+  border-right: none;
+}
 .table__footer-tr {
   border-right: none;
+  border-left: none;
 }
 .content {
   font-family: "Open Sans", sans-serif;
