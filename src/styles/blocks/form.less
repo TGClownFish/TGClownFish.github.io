@@ -4,19 +4,20 @@
         flex-wrap: wrap;
         gap: 30px 60px;
     }
-    &__field {
-        width: 100%;
-        &--w50 {
-            width: calc(50% - 30px);
-        }
-        &--mb30 {
-            margin-bottom: 30px;
-        }
-    }
+    &__field,
     &__group {
         width: 100%;
         &--w50 {
             width: calc(50% - 30px);
+            @media @bw1170 {
+                width: calc(50% - 15px);
+            }
+            @media @bw600 {
+                width: 100%;
+            }
+        }
+        &--mb30 {
+            margin-bottom: 30px;
         }
     }
     &__section {
@@ -34,6 +35,10 @@
         display: flex;
         align-items: center;
         margin-top: 40px;
+        @media @bw500 {
+            flex-direction: column;
+            gap: 30px;
+        }
     }
     &__btn {
         max-width: 400px;
