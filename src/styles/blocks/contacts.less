@@ -27,4 +27,14 @@
         font-weight: 600;
         margin-bottom: 10px;
     }
+    &__element-desc {
+        text-decoration: none;
+        color: @black;
+        transition: color 0.2s;
+        &:hover {
+            @media(hover:hover) {
+                color: @red;
+            }
+        }
+    }
 }

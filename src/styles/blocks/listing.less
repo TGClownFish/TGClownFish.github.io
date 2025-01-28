@@ -85,4 +85,14 @@
     &__bottom-element-desc {
         text-align: center;
     }
+    &__bottom-element-desc-link {
+        text-decoration: none;
+        color: @black;
+        transition: color 0.2s;
+        &:hover {
+            @media(hover:hover){
+                color: @red;
+            }
+        }
+    }
 }
