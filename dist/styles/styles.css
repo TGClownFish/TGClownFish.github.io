@@ -747,6 +747,10 @@ textarea:focus::placeholder {
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
+.contacts__map {
+  width: 752px;
+  height: 493px;
+}
 .upcoming {
   margin-top: 210px;
   background-color: #ffffff;
