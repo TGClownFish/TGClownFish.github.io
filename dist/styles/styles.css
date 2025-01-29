@@ -791,6 +791,8 @@ textarea:focus::placeholder {
   font-size: 0px;
   margin-left: 20px;
   margin-right: 20px;
+  border: none;
+  background-color: transparent;
   -webkit-transition: currentColor 0.2s, color 0.2s;
   transition: currentColor 0.2s, color 0.2s;
 }
@@ -798,6 +800,11 @@ textarea:focus::placeholder {
   cursor: pointer;
   currentColor: #bc3324;
   color: #bc3324;
+}
+.upcoming__arrow--left {
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 .upcoming__line {
   display: inline-block;
