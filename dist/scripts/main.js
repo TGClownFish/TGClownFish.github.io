@@ -2,9 +2,9 @@
 
 (function () {
     "use strict";
+    const root = document.documentElement;
 
     //логика для бургера на мобилках
-    const root = document.documentElement;
     const navToggle = document.querySelector("#js-navToggle");
     navToggle.addEventListener("click", function () {
       root.classList.toggle("show-nav");
@@ -40,6 +40,7 @@
       });
     }
 
+    //логика для листания карточек
     const swipers = document.querySelectorAll(".js-swiper");
     swipers.forEach(function (swpr) {
       new Swiper(swpr, {
