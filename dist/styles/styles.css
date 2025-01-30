@@ -2025,9 +2025,19 @@ textarea:focus::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-flow: 1;
           flex-flow: 1;
-  -ms-flex-direction: row;
-      flex-direction: row;
+  -ms-flex-direction: column;
+      flex-direction: column;
   margin-bottom: 15px;
+  width: 410px;
+}
+.subscribe-form__field-and-error-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .subscribe-form__input {
   -webkit-box-sizing: border-box;
@@ -2060,6 +2070,12 @@ textarea:focus::placeholder {
 .subscribe-form__input::placeholder {
   color: #dedede;
 }
+.subscribe-form label.error,
+.subscribe-form span.error {
+  display: block;
+  margin: 5px 0 0;
+  color: #bc3324;
+}
 .subscribe-form__submit {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2076,11 +2092,12 @@ textarea:focus::placeholder {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   border-radius: 0;
   outline: none;
-  height: 100%;
+  width: 130px;
+  height: 55px;
   border: none;
   padding: 15px 23px;
   background-color: #1f1e1e;
@@ -2091,6 +2108,15 @@ textarea:focus::placeholder {
 .subscribe-form__submit:hover {
   background-color: #a51505;
   cursor: pointer;
+}
+.subscribe-form__error-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 .blog-listing {
   -webkit-box-sizing: border-box;
@@ -2601,6 +2627,12 @@ textarea:focus::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.field label.error,
+.field span.error {
+  display: block;
+  margin: 5px 0 0;
+  color: #bc3324;
 }
 .field__input,
 .field__textarea {
@@ -3335,6 +3367,14 @@ textarea:focus::placeholder {
   color: #1f1e1e;
   cursor: pointer;
 }
+.check label.error,
+.check span.error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0 0;
+  color: #bc3324;
+}
 .check__input {
   position: absolute !important;
   width: 0 !important;
@@ -3401,6 +3441,15 @@ textarea:focus::placeholder {
 }
 .check__label--gray {
   color: #bfbfbf;
+}
+.check__error-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 .event-card {
   display: -webkit-box;

@@ -331,4 +331,19 @@
       });
     }
 
+    //логика для валидации форм
+    const eventForm = $('#js-eventForm');
+    if (eventForm.length) {
+      eventForm.validate({
+        errorElement: "span"
+      });
+    }
+
+    const subscribeForm = $('#js-subscribeForm');
+    if (subscribeForm.length) {
+      subscribeForm.validate({
+        errorElement: "span"
+      });
+    }
+
 })();

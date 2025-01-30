@@ -153,9 +153,11 @@
               </label>
 
               <label class="check">
-                <input type="checkbox" name="agree" class="check__input" required checked />
-                <span class="check__mark"></span>
-                <span class="check__label">Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных</span>
+                <div class="check__error-wrapper">
+                  <input type="checkbox" name="agree" class="check__input" required checked />
+                  <span class="check__mark"></span>
+                  <span class="check__label">Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных</span>
+                </div>
               </label>
             </div>
             <div class="form__btns">
@@ -431,18 +433,24 @@
         <a href="#" class="page-footer__block1-link">Наши проекты</a>
         <a href="#" class="page-footer__block1-link">Контакты</a>
       </div>
-      <form class="page-footer__subscribe-form subscribe-form">
+      <form class="page-footer__subscribe-form subscribe-form" id="js-subscribeForm">
         <h4 class="subscribe-form__title">Подпишись и будь в курсе происходящего</h4>
         <div class="subscribe-form__wrapper">
-          <div class="subscribe-form__field-wrapper">
-            <input name="email" type="email" placeholder="Email" class="subscribe-form-input field__input" required />
+          <div class="subscribe-form__field-and-error-wrapper">
+            <div class="subscribe-form__field-wrapper">
+              <input name="email" type="email" placeholder="Email" class="subscribe-form-input field__input" required />
+            </div>
             <button type="submit" class="subscribe-form__submit">Подписаться</button>
           </div>
+
           <label class="subscribe-form__check check">
-            <input name="agree" type="checkbox" class="check__input" required checked />
-            <span class="check__mark"></span>
-            <span class="check__label">Согласен на обработку персональных данных</span>
+            <div class="subscribe-form__error-wrapper">
+              <input name="agree" type="checkbox" class="check__input" required checked />
+              <span class="check__mark"></span>
+              <span class="check__label">Согласен на обработку персональных данных</span>
+            </div>
           </label>
+
         </div>
       </form>
     </div>
@@ -478,6 +486,8 @@
   <script src="scripts/jquery-3.7.1.min.js"></script>
   <script src="scripts/jquery.selectric.min.js"></script>
   <script src="scripts/jquery.mask.min.js"></script>
+  <script src="scripts/jquery.validate.min.js"></script>
+  <script src="scripts/jquery.validate-init.js"></script>
   <script src="scripts/air-datepicker.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key="></script>
   <script src="scripts/swiper.min.js"></script>
