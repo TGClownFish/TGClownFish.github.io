@@ -2181,6 +2181,9 @@ textarea:focus::placeholder {
   display: -ms-flexbox;
   display: flex;
   gap: 54px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .contacts__element-info {
   display: -webkit-box;
@@ -2192,17 +2195,22 @@ textarea:focus::placeholder {
           flex-direction: column;
   -ms-flex-item-align: center;
       align-self: center;
+  justify-self: center;
 }
 .contacts__element-title {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
+  margin-top: 0px;
 }
-.contacts__element-desc {
+.contacts__element-desc-link {
   text-decoration: none;
   color: #1f1e1e;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
+}
+.contacts__icon-small {
+  display: none;
 }
 .contacts__map {
   width: 752px;
@@ -2384,7 +2392,7 @@ textarea:focus::placeholder {
   display: grid;
   grid-template-columns: 1fr 400px;
   grid-template-rows: 68px 75px 60px;
-  gap: 80px 60px ;
+  gap: 80px 60px;
   margin-top: 100px;
   grid-template-areas: "pic3 text" "pic3 text" "pic3 link";
 }
@@ -4257,6 +4265,13 @@ textarea:focus::placeholder {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .contacts {
+    margin-bottom: 130px;
+  }
+  .contacts__wrapper {
+    gap: 132px;
+    margin-top: 130px;
+  }
   .upcoming__container {
     padding-left: 30px;
     padding-right: 30px;
@@ -4474,6 +4489,49 @@ textarea:focus::placeholder {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .contacts {
+    margin-bottom: 100px;
+  }
+  .contacts__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 100px;
+    margin-top: 100px;
+  }
+  .contacts__wrapper-left {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacts__element {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  .contacts__element-info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacts__element-title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .contacts__map {
+    width: 708px;
+    height: 463px;
+  }
   .upcoming__container {
     padding-left: 20px;
     padding-right: 20px;
@@ -4685,6 +4743,48 @@ textarea:focus::placeholder {
     height: 42px;
     font-size: 16px;
   }
+  .contacts__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 60px;
+    margin-top: 60px;
+  }
+  .contacts__wrapper-left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 40px;
+  }
+  .contacts__element {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 30px;
+  }
+  .contacts__element-title {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .contacts__icon {
+    display: none;
+  }
+  .contacts__icon-small {
+    display: block;
+  }
+  .contacts__map {
+    width: 280px;
+    height: 186px;
+  }
   .about__header {
     margin-top: 100px;
   }
@@ -4713,8 +4813,24 @@ textarea:focus::placeholder {
   .about__br {
     display: none;
   }
+  .about__block2-picture2 {
+    height: 186px;
+    width: 236px;
+    justify-self: end;
+  }
   .about__block3 {
-    font-size: 18px;
+    grid-template-areas: "pic3" "text" "link";
+    grid-template-columns: 1fr;
+    gap: 0px;
+    grid-template-rows: 166px 96px 90px;
+    margin-top: 200px;
+  }
+  .about__block3-picture {
+    height: 116px;
+    width: 280px;
+  }
+  .about__block3-img {
+    width: calc(100% - 11px);
   }
   .promo__i-want-container {
     margin-top: 40px;
@@ -4777,7 +4893,7 @@ textarea:focus::placeholder {
   }
 }
 @media (hover: hover) {
-  .contacts__element-desc:hover {
+  .contacts__element-desc-link:hover {
     color: #bc3324;
   }
   .socials__link:hover {
