@@ -3986,6 +3986,11 @@ textarea:focus::placeholder {
 .page-header__nav-user-icon {
   display: none;
 }
+.page-header__nav-user-icon:hover {
+  cursor: pointer;
+  currentColor: #bc3324;
+  color: #bc3324;
+}
 .page-header__right-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4003,6 +4008,11 @@ textarea:focus::placeholder {
 }
 .page-header__user-icon {
   display: none;
+}
+.page-header__user-icon:hover {
+  cursor: pointer;
+  currentColor: #bc3324;
+  color: #bc3324;
 }
 .page-header__nav-toggle {
   display: none;
@@ -4029,6 +4039,9 @@ textarea:focus::placeholder {
 }
 .page-header__nav-toggle::after {
   bottom: 13px;
+}
+.page-header__nav-toggle:hover {
+  cursor: pointer;
 }
 .page-header__nav-toggle-line {
   position: absolute;
@@ -4366,6 +4379,9 @@ textarea:focus::placeholder {
     transition: transform 0.4s;
     transition: transform 0.4s, -webkit-transform 0.4s;
   }
+  .page-header__nav {
+    margin-top: 111px;
+  }
   .page-header__nav-link,
   .page-header__nav-user-link,
   .page-header__nav-logout {
@@ -4374,6 +4390,12 @@ textarea:focus::placeholder {
     margin: 0;
     font-size: 16px;
     padding: 5px 0;
+    margin-left: 30px;
+  }
+  .page-header__nav-link:first-child,
+  .page-header__nav-user-link:first-child,
+  .page-header__nav-logout:first-child {
+    margin-top: 100px;
   }
   .page-header__nav-user-link {
     display: -webkit-box;
@@ -4389,6 +4411,7 @@ textarea:focus::placeholder {
     gap: 30px;
   }
   .page-header__user-btn {
+    display: none;
     border: none;
     font-size: 0px;
     width: 40px;
@@ -4397,6 +4420,7 @@ textarea:focus::placeholder {
   }
   .page-header__user-icon {
     display: block;
+    margin-top: 9px;
   }
   .page-header__nav-toggle {
     display: block;
@@ -4547,6 +4571,19 @@ textarea:focus::placeholder {
   .page-header__logo-icon {
     width: 96px;
     height: 70px;
+  }
+  .page-header__nav {
+    margin-top: 70px;
+  }
+  .page-header__nav-link,
+  .page-header__nav-user-link,
+  .page-header__nav-logout {
+    margin-left: 20px;
+  }
+  .page-header__nav-link:first-child,
+  .page-header__nav-user-link:first-child,
+  .page-header__nav-logout:first-child {
+    margin-top: 80px;
   }
   .page-footer {
     padding-left: 20px;
