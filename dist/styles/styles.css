@@ -1949,7 +1949,8 @@ textarea:focus::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #1f1e1e;
   text-transform: uppercase;
   font-family: "Lora", serif;
@@ -2343,7 +2344,6 @@ textarea:focus::placeholder {
   padding-right: 40px;
 }
 .about__header {
-  margin-bottom: 0px;
   margin-top: 200px;
 }
 .about__block1 {
@@ -2356,16 +2356,15 @@ textarea:focus::placeholder {
 .about__block2 {
   display: grid;
   grid-template-columns: 1fr 400px;
-  grid-template-areas: "pic1 pic2" "title pic2" "text text";
   gap: 50px 60px;
   margin-top: 100px;
+  grid-template-areas: "pic1 pic2" "title pic2" "text text";
 }
 .about__block2-picture1 {
   grid-area: pic1;
 }
 .about__subtitle {
   grid-area: title;
-  margin: 50px 0 0;
   font-size: 44px;
 }
 .about__text {
@@ -2373,6 +2372,9 @@ textarea:focus::placeholder {
   margin: 0;
   margin-left: auto;
   max-width: 870px;
+}
+.about__br {
+  display: none;
 }
 .about__block2-picture2 {
   grid-area: pic2;
@@ -2382,9 +2384,9 @@ textarea:focus::placeholder {
   display: grid;
   grid-template-columns: 1fr 400px;
   grid-template-rows: 68px 75px 60px;
-  grid-template-areas: "pic3 text" "pic3 text" "pic3 link";
   gap: 80px 60px ;
   margin-top: 100px;
+  grid-template-areas: "pic3 text" "pic3 text" "pic3 link";
 }
 .about__block3-content {
   height: 100%;
@@ -4487,6 +4489,30 @@ textarea:focus::placeholder {
   .about__header {
     margin-top: 130px;
   }
+  .about__block1 {
+    margin-top: 80px;
+  }
+  .about__block2 {
+    grid-template-columns: 1fr 320px;
+    grid-template-areas: "pic1 pic1" "title pic2" "text pic2";
+    gap: 52px 27px;
+  }
+  .about__subtitle {
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .about__text {
+    font-size: 16px;
+    margin-left: 80px;
+  }
+  .about__br {
+    display: inline;
+  }
+  .about__block3 {
+    grid-template-areas: "pic3 pic3" "text link";
+    grid-template-rows: 291px 66px;
+    grid-template-columns: 1fr 262px;
+  }
   .x-btn {
     width: 36px;
     height: 36px;
@@ -4661,6 +4687,34 @@ textarea:focus::placeholder {
   }
   .about__header {
     margin-top: 100px;
+  }
+  .about__block1 {
+    margin-top: 50px;
+    gap: 0px;
+  }
+  .about__block2 {
+    grid-template-areas: "pic1" "title" "text" "pic2";
+    grid-template-columns: 1fr;
+    grid-template-rows: 246px 80px 226px 1fr;
+    margin-top: 60px;
+    gap: 1px;
+  }
+  .about__block2-picture1 {
+    height: 186px;
+    width: 280px;
+  }
+  .about__subtitle {
+    font-size: 18px;
+  }
+  .about__text {
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+  .about__br {
+    display: none;
+  }
+  .about__block3 {
+    font-size: 18px;
   }
   .promo__i-want-container {
     margin-top: 40px;
