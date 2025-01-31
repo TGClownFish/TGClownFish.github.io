@@ -9,6 +9,13 @@
   padding-left: 24px;
   color: @black;
   cursor: pointer;
+  label.error,
+    span.error {
+      display: flex;
+      margin: 5px 0 0;
+      color: @red;
+      
+    } 
     &__input {
         .is-hidden();
         &:checked {
@@ -68,4 +75,8 @@
           color: @gray_dark;
         }
     }
+    &__error-wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+  }
   }

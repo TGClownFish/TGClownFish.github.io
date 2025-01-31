@@ -4,8 +4,13 @@
         
     }
     &__header {
-        margin-bottom: 0px;
-        margin-top: 187px;
+        margin-top: 200px;
+            @media @bw768 {
+                margin-top: 130px;
+            }
+            @media @bw500 {
+                margin-top: 100px;
+            }
         }
     &__block1 {
         display: grid;
@@ -15,45 +20,124 @@
         "text text";
         gap: 50px 60px;
         margin-top: 100px;
+        @media @bw1340 {
+            //margin-top: 80px;
+        }
+        @media @bw768 {
+            margin-top: 80px;
+        }
+        @media @bw500 {
+            margin-top: 50px;
+            gap: 0px;
+        }
     }
     &__block2 {
         display: grid;
         grid-template-columns: 1fr 400px;
+        gap: 50px 60px;
+        margin-top: 100px;
         grid-template-areas: 
         "pic1 pic2"
         "title pic2"
          "text text";
-        gap: 50px 60px;
-        margin-top: 100px;
+        @media @bw768 {
+            grid-template-columns: 1fr 320px;
+            grid-template-areas: 
+            "pic1 pic1"
+            "title pic2"
+            "text pic2";
+            gap: 52px 27px;
+        }
+        @media @bw500 {
+            grid-template-areas: 
+            "pic1"
+            "title"
+            "text"
+            "pic2";
+            grid-template-columns: 1fr;
+            grid-template-rows: 246px 80px 226px 1fr;
+            margin-top: 60px;
+            gap: 1px;
+        }
     }
     &__block2-picture1 {
         grid-area: pic1;
+        @media @bw500 {
+            height: 186px;
+            width: 280px;
+        }
     }
     &__subtitle {
         grid-area: title;
-        margin: 50px 0 0;
         font-size: 44px;
+        @media @bw768 {
+            font-size: 26px;
+            font-weight: 700;
+        }
+        @media @bw500 {
+            font-size: 18px;
+        }
     }
     &__text {
         grid-area: text;
         margin: 0;
         margin-left: auto;
         max-width: 870px;
+        @media @bw768 {
+            font-size: 16px;
+            margin-left: 80px;
+        }
+        @media @bw500 {
+            margin-left: 0px;
+            margin-right: 20px;
+        }
     }
+    &__br {
+        display: none;
+        @media @bw768 {
+            display: inline;
+        }
+        @media @bw500 {
+            display: none;
+        }
+    }
+
     &__block2-picture2 {
         grid-area: pic2;
         align-self: flex-end;
+        @media @bw500 {
+            height: 186px;
+            width: 236px;
+            justify-self: end;
+        }
     }
     &__block3 {
         display: grid;
         grid-template-columns: 1fr 400px;
         grid-template-rows: 68px 75px 60px;
+        gap: 80px 60px;
+        margin-top: 100px;
         grid-template-areas: 
         "pic3 text"
         "pic3 text"
         "pic3 link";
-        gap: 80px 60px ;
-        margin-top: 100px;
+        @media @bw768 {
+            grid-template-areas: 
+            "pic3 pic3"
+            "text link";
+            grid-template-rows: 291px 66px;
+            grid-template-columns: 1fr 262px;
+        }
+        @media @bw500 {
+            grid-template-areas: 
+            "pic3"
+            "text"
+            "link";
+            grid-template-columns: 1fr;
+            gap: 0px;
+            grid-template-rows: 166px 96px 90px;
+            margin-top: 200px;
+        }
     }
     &__block3-content {
         height: 100%;
@@ -81,6 +165,11 @@
             content: '';
             padding-top: 40.86%;
         }
+        @media @bw500 {
+            height: 116px;
+            width: 280px;
+            //justify-self: end;
+        }
     }
     &__block3-img {
         position: absolute;
@@ -88,6 +177,9 @@
         left: 49px;
         width: calc(100% - 57px);
         object-fit: contain;
+        @media @bw500 {
+            width: calc(100% - 11px);
+        }
     }
     &__block3-link {
         grid-area: link;
