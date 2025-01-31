@@ -64,9 +64,9 @@
   </header>
   <main class="main">
     <div class="events">
-      <div>Главная / Мероприятия</div>
+      <div class="events__url">Главная / Мероприятия</div>
       <section class="listing events__listing">
-        <h2 class="header__h2 header">Мероприятия</h2>
+        <h2 class="header header__h2 events__header">Мероприятия</h2>
         <div class="listing__events-list">
           <!-- "img_tablet": "assets/images/events/theatre_nirvana.jpg",
                   "img_webp": "assets/images/events/nirvana.webp",
@@ -176,7 +176,7 @@
           </a>
         </div>
       </section>
-      <h2 class="header__h2 header">дополнительные услуги</h2>
+      <h2 class="header__h2 header events__header">дополнительные услуги</h2>
       <div class="listing__description">Перед запуском проекта, мы подготавливаем подробную смету и согласуем ее с клиентом.
         Убедившись, что все пожеланию учтены и мы можем приступать к реализациии проекта,
         начинается сложная, но интересная работа, результатом которой будет проведение вашего
@@ -308,12 +308,12 @@
           </tr>
         </tfoot>
       </table>
-      <div class="promo__i-want-container listing__i-want">
-        <div class="promo__text promo__text--small">Я хочу:</div>
-        <div class="promo__btn-container">
-          <a href="#" class="btn--red btn">Провести мероприятие</a>
-          <div class="promo__empty-block"></div>
-          <a href="#" class="btn">Стать арендатором</a>
+      <div class="listing__i-want-container">
+        <div class="listing__text">Я хочу:</div>
+        <div class="listing__btn-container">
+          <button type="button" href="#" class="btn--red listing__btn btn" id="js-eventOpenBtn">Провести мероприятие</button>
+          <div class="listing__empty-block"></div>
+          <a href="#" class="listing__btn btn">Стать арендатором</a>
         </div>
       </div>
     </div>
@@ -321,6 +321,9 @@
       <div class="listing__bottom-element">
         <svg class="listing__bottom-element-icon" width="110" height="110">
           <use xlink:href="assets/icons/symbols.svg#information"></use>
+        </svg>
+        <svg class="listing__bottom-element-icon-small" width="65" height="65">
+          <use xlink:href="assets/icons/symbols.svg#information-small"></use>
         </svg>
         <div class="listing__bottom-element-title">Цены</div>
         <div class="listing__bottom-element-desc">
@@ -331,6 +334,9 @@
       <div class="listing__bottom-element">
         <svg class="listing__bottom-element-icon" width="110" height="110">
           <use xlink:href="assets/icons/symbols.svg#contact"></use>
+        </svg>
+        <svg class="listing__bottom-element-icon-small" width="65" height="65">
+          <use xlink:href="assets/icons/symbols.svg#contact-small"></use>
         </svg>
         <div class="listing__bottom-element-title">Контакты</div>
         <div class="listing__bottom-element-desc">
@@ -344,6 +350,9 @@
       <div class="listing__bottom-element">
         <svg class="listing__bottom-element-icon" width="110" height="110">
           <use xlink:href="assets/icons/symbols.svg#handshake"></use>
+        </svg>
+        <svg class="listing__bottom-element-icon-small" width="65" height="65">
+          <use xlink:href="assets/icons/symbols.svg#handshake-small"></use>
         </svg>
         <div class="listing__bottom-element-title">Преимущество</div>
         <div class="listing__bottom-element-desc">
