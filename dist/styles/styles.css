@@ -4244,6 +4244,9 @@ textarea:focus::placeholder {
   .swiper-footer {
     width: 300px;
   }
+  .header__h2 {
+    width: 604px;
+  }
   .blog-listing {
     padding-left: 30px;
     padding-right: 30px;
@@ -4455,6 +4458,12 @@ textarea:focus::placeholder {
   .swiper-footer {
     margin: 60px auto 0;
   }
+  .header__h2 {
+    width: 566px;
+    height: 52px;
+    font-size: 24px;
+    padding: 11px;
+  }
   .blog-listing {
     padding-left: 20px;
     padding-right: 20px;
@@ -4644,6 +4653,11 @@ textarea:focus::placeholder {
   }
   .selectric-wrapper::before {
     right: 17px;
+  }
+  .header__h2 {
+    width: 280px;
+    height: 42px;
+    font-size: 16px;
   }
   .about__header {
     margin-top: 100px;
