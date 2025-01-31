@@ -2344,7 +2344,7 @@ textarea:focus::placeholder {
 }
 .about__header {
   margin-bottom: 0px;
-  margin-top: 187px;
+  margin-top: 200px;
 }
 .about__block1 {
   display: grid;
@@ -2527,7 +2527,6 @@ textarea:focus::placeholder {
   margin-top: 100px;
 }
 .promo__i-want-container {
-  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2541,10 +2540,13 @@ textarea:focus::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 100px;
 }
 .promo__image {
   width: 1920px;
   height: 325px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 .promo__title {
   display: -webkit-box;
@@ -2562,7 +2564,6 @@ textarea:focus::placeholder {
   font-weight: 400;
   font-size: 45px;
   font-family: "Lora", serif;
-  margin-bottom: 70px;
 }
 .promo__text {
   display: -webkit-box;
@@ -2576,17 +2577,11 @@ textarea:focus::placeholder {
           justify-content: center;
   text-transform: uppercase;
   color: #1f1e1e;
-  text-align: center;
-  font-weight: 400;
-  font-size: 45px;
   font-family: "Lora", serif;
-  margin-top: 70px;
-}
-.promo__text--small {
+  text-align: center;
   font-size: 22px;
   margin-bottom: 46px;
   font-weight: 400;
-  margin-top: 0;
 }
 .promo__btn-container {
   display: -webkit-box;
@@ -2602,6 +2597,9 @@ textarea:focus::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.promo__btn {
+  width: 100%;
 }
 .promo__empty-block {
   width: 106px;
@@ -4271,6 +4269,12 @@ textarea:focus::placeholder {
     height: 257px;
     padding-left: -89.14px;
   }
+  .promo__title {
+    font-size: 35px;
+  }
+  .promo__empty-block {
+    width: 95px;
+  }
   .table {
     padding-left: 30px;
     padding-right: 30px;
@@ -4471,14 +4475,32 @@ textarea:focus::placeholder {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .about__header {
+    margin-top: 130px;
+  }
   .x-btn {
     width: 36px;
     height: 36px;
+  }
+  .promo__i-want-container {
+    margin-top: 73px;
   }
   .promo__image {
     width: 974.77px;
     height: 165px;
     padding-left: -103px;
+    margin-top: 51px;
+    margin-bottom: 51px;
+  }
+  .promo__title {
+    font-size: 30px;
+  }
+  .promo__text {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .promo__empty-block {
+    width: 56px;
   }
   .table {
     padding-left: 20px;
@@ -4623,6 +4645,37 @@ textarea:focus::placeholder {
   .selectric-wrapper::before {
     right: 17px;
   }
+  .about__header {
+    margin-top: 100px;
+  }
+  .promo__i-want-container {
+    margin-top: 40px;
+  }
+  .promo__image {
+    width: 437.17px;
+    height: 74px;
+    padding-left: -58.91px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+  .promo__title {
+    font-size: 13px;
+  }
+  .promo__text {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .promo__btn-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .promo__empty-block {
+    height: 25px;
+  }
   .form__btns {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4648,13 +4701,6 @@ textarea:focus::placeholder {
   }
   .page-header__logo-icon {
     margin-left: -20px;
-  }
-}
-@media (max-width: 320px) {
-  .promo__image {
-    width: 437.17px;
-    height: 74px;
-    padding-left: -58.91px;
   }
 }
 @media (min-width: 1920px) {

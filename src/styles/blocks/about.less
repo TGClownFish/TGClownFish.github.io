@@ -5,7 +5,13 @@
     }
     &__header {
         margin-bottom: 0px;
-        margin-top: 187px;
+        margin-top: 200px;
+        @media @bw768 {
+            margin-top: 130px;
+        }
+        @media @bw500 {
+            margin-top: 100px;
+        }
         }
     &__block1 {
         display: grid;
