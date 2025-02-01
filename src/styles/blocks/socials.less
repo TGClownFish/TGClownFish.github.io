@@ -29,5 +29,16 @@
     &__icon {
         margin: auto;
         cursor: pointer;
+        @media @bw500 {
+            display: none;
+        }
+    }
+    &__icon-small {
+        margin: auto;
+        cursor: pointer;
+        display: none;
+        @media @bw500 {
+            display: block;
+        }
     }
 }

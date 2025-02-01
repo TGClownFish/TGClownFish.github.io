@@ -96,6 +96,21 @@
         grid-template-areas: 
             "copyright socials create"
             "links socials create";
+        @media @bw768 {
+            grid-template-areas:
+            "socials socials"
+            "copyright copyright"
+            "links create";
+            grid-template-columns: 1fr 1fr;
+        }
+        @media @bw500 {
+            grid-template-areas:
+            "socials"
+            "links"
+            "copyright"
+            "create";
+            grid-template-columns: 1fr;
+        }
     }
     &__socials {
         grid-area: socials;
@@ -103,7 +118,14 @@
     &__block2-links {
         grid-area: links;
         display: flex;
-        gap: 80px;
+        gap: 60px;
+        @media @bw768 {
+            gap: 15px;
+        }
+        @media @bw500 {
+            flex-direction: column;
+            gap: 20px;
+        }
     }
     &__block2-link {
         text-decoration: none;
