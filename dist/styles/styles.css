@@ -2196,6 +2196,85 @@ textarea:focus::placeholder {
   width: 752px;
   height: 493px;
 }
+.upcoming {
+  margin-top: 210px;
+  background-color: #ffffff;
+}
+.upcoming__container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1414px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.upcoming__header {
+  margin-bottom: 150px;
+}
+.upcoming__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 122px;
+}
+.upcoming__nav-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+}
+.upcoming__arrow {
+  font-size: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: none;
+  background-color: transparent;
+  -webkit-transition: currentColor 0.2s, color 0.2s;
+  transition: currentColor 0.2s, color 0.2s;
+}
+.upcoming__arrow:hover {
+  cursor: pointer;
+  currentColor: #bc3324;
+  color: #bc3324;
+}
+.upcoming__arrow--left {
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+.upcoming__line {
+  display: inline-block;
+  width: 15px;
+  height: 2px;
+  background-color: #dedede;
+}
+.upcoming__line--black {
+  background-color: #1f1e1e;
+}
+.upcoming__see-all {
+  text-decoration: none;
+  float: right;
+  margin-top: 15px;
+  -webkit-transform: color 0.2s;
+      -ms-transform: color 0.2s;
+          transform: color 0.2s;
+}
+.upcoming__see-all:hover {
+  color: #bc3324;
+}
 .article__container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -4236,6 +4315,10 @@ textarea:focus::placeholder {
     gap: 132px;
     margin-top: 130px;
   }
+  .upcoming__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   .article__container {
     padding-left: 30px;
     padding-right: 30px;
@@ -4504,6 +4587,10 @@ textarea:focus::placeholder {
   .contacts__map {
     width: 708px;
     height: 463px;
+  }
+  .upcoming__container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .article__container {
     padding-left: 20px;
