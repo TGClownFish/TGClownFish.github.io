@@ -2,19 +2,41 @@
 <html lang="ru">
 <meta charset="utf-8">
 <title>Lenni Art</title>
-<meta name="description" counter="Page Description">
+<meta name="description" content="Арт—пространство для людей, горящих сердец и делом">
+<meta name="keywords" content="Lenni Art, пространство, мероприятия">
+<meta property="og:title" content="Lenni Art" />
+<meta property="og:description" content="Арт пространство для людей, горящих сердцем и делом" />
+<meta property="og:image" content="/assets/images/lenni-art.jpg">
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://lenni-art.ru/" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles/styles.min.css?ver=0">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/assets/favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<meta name="msapplication-TileColor" content="#dedede">
+<meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+<meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+<link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#bc3324">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+<link rel="manifest" href="/assets/favicons/site.webmanifest">
+<meta name="apple-mobile-web-app-title" content="Lenni Art">
+<meta name="application-name" content="Lenni Art">
+<meta name="theme-color" content="#dedede">
 
 <body class="body">
   <header class="page-header">
     <div class="page-header__container">
       <a href="index.html" class="page-header__logo">
-        <svg class="page-header__logo-icon" width="202" height="147">
-          <use xlink:href="assets/icons/symbols.svg#logo"></use>
-        </svg>
+        <img class="page-header__logo-icon" src="assets/icons/logo.png"><!--width="202" height="147"-->
+        </img>
       </a>
       <nav class="page-header__nav">
         <a href="events.html" class="page-header__nav-link">Мероприятия</a>
@@ -24,14 +46,14 @@
 
         <a href="#" class="page-header__nav-user-link">
           Александр С.
-          <svg class="page-header__user-icon" width="24" height="24">
+          <svg class="page-header__nav-user-icon" width="24" height="24">
             <use xlink:href="assets/icons/symbols.svg#door"></use>
           </svg>
         </a>
       </nav>
       <div class="page-header__right-block">
         <a href="#" class="page-header__user-btn btn">Войти</a>
-        <svg class="page-header__user-icon" width="21" height="21">
+        <svg class="page-header__user-icon" width="24" height="24">
           <use xlink:href="assets/icons/symbols.svg#user"></use>
         </svg>
         <button type="button" class="page-header__nav-toggle" id="js-navToggle">
@@ -42,9 +64,9 @@
   </header>
   <main class="main">
     <div class="events">
-      <div>Главная / Мероприятия</div>
+      <div class="events__url">Главная / Мероприятия</div>
       <section class="listing events__listing">
-        <h2 class="header__h2 header">Мероприятия</h2>
+        <h2 class="header header__h2 events__header">Мероприятия</h2>
         <div class="listing__events-list">
           <!-- "img_tablet": "assets/images/events/theatre_nirvana.jpg",
                   "img_webp": "assets/images/events/nirvana.webp",
@@ -154,7 +176,7 @@
           </a>
         </div>
       </section>
-      <h2 class="header__h2 header">дополнительные услуги</h2>
+      <h2 class="header__h2 header events__header">дополнительные услуги</h2>
       <div class="listing__description">Перед запуском проекта, мы подготавливаем подробную смету и согласуем ее с клиентом.
         Убедившись, что все пожеланию учтены и мы можем приступать к реализациии проекта,
         начинается сложная, но интересная работа, результатом которой будет проведение вашего
@@ -286,12 +308,12 @@
           </tr>
         </tfoot>
       </table>
-      <div class="promo__i-want-container listing__i-want">
-        <div class="promo__text promo__text--small">Я хочу:</div>
-        <div class="promo__btn-container">
-          <a href="#" class="btn--red btn">Провести мероприятие</a>
-          <div class="promo__empty-block"></div>
-          <a href="#" class="btn">Стать арендатором</a>
+      <div class="listing__i-want-container">
+        <div class="listing__text">Я хочу:</div>
+        <div class="listing__btn-container">
+          <button type="button" href="#" class="btn--red listing__btn btn" id="js-eventOpenBtn">Провести мероприятие</button>
+          <div class="listing__empty-block"></div>
+          <a href="#" class="listing__btn btn">Стать арендатором</a>
         </div>
       </div>
     </div>
@@ -299,6 +321,9 @@
       <div class="listing__bottom-element">
         <svg class="listing__bottom-element-icon" width="110" height="110">
           <use xlink:href="assets/icons/symbols.svg#information"></use>
+        </svg>
+        <svg class="listing__bottom-element-icon-small" width="65" height="65">
+          <use xlink:href="assets/icons/symbols.svg#information-small"></use>
         </svg>
         <div class="listing__bottom-element-title">Цены</div>
         <div class="listing__bottom-element-desc">
@@ -309,6 +334,9 @@
       <div class="listing__bottom-element">
         <svg class="listing__bottom-element-icon" width="110" height="110">
           <use xlink:href="assets/icons/symbols.svg#contact"></use>
+        </svg>
+        <svg class="listing__bottom-element-icon-small" width="65" height="65">
+          <use xlink:href="assets/icons/symbols.svg#contact-small"></use>
         </svg>
         <div class="listing__bottom-element-title">Контакты</div>
         <div class="listing__bottom-element-desc">
@@ -322,6 +350,9 @@
       <div class="listing__bottom-element">
         <svg class="listing__bottom-element-icon" width="110" height="110">
           <use xlink:href="assets/icons/symbols.svg#handshake"></use>
+        </svg>
+        <svg class="listing__bottom-element-icon-small" width="65" height="65">
+          <use xlink:href="assets/icons/symbols.svg#handshake-small"></use>
         </svg>
         <div class="listing__bottom-element-title">Преимущество</div>
         <div class="listing__bottom-element-desc">
@@ -341,18 +372,24 @@
         <a href="#" class="page-footer__block1-link">Наши проекты</a>
         <a href="#" class="page-footer__block1-link">Контакты</a>
       </div>
-      <form class="page-footer__subscribe-form subscribe-form">
+      <form action="https://jsonplaceholder.typicode.com/posts" class="page-footer__subscribe-form subscribe-form" id="js-subscribeForm">
         <h4 class="subscribe-form__title">Подпишись и будь в курсе происходящего</h4>
         <div class="subscribe-form__wrapper">
-          <div class="subscribe-form__field-wrapper">
-            <input name="email" type="email" placeholder="Email" class="subscribe-form-input field__input" required />
+          <div class="subscribe-form__field-and-error-wrapper">
+            <div class="subscribe-form__field-wrapper">
+              <input name="email" type="email" placeholder="Email" class="subscribe-form-input field__input" required />
+            </div>
             <button type="submit" class="subscribe-form__submit">Подписаться</button>
           </div>
+
           <label class="subscribe-form__check check">
-            <input name="agree" type="checkbox" class="check__input" required checked />
-            <span class="check__mark"></span>
-            <span class="check__label">Согласен на обработку персональных данных</span>
+            <div class="subscribe-form__error-wrapper">
+              <input name="agree" type="checkbox" class="check__input" required checked />
+              <span class="check__mark"></span>
+              <span class="check__label">Согласен на обработку персональных данных</span>
+            </div>
           </label>
+
         </div>
       </form>
     </div>
