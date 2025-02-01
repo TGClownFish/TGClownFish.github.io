@@ -6,11 +6,29 @@
     gap: 65px 11%;
     width: 100%;
     grid-template-areas: 
-    "checkbox scheme"
+    "check scheme"
     "order legend";
+    @media @bw1340 {
+        gap: 65px 1%;
+    }
+    @media @bw768 {
+        grid-template-areas: 
+            "scheme scheme"
+            "check legend"
+            "check order";
+        grid-template-columns: 192px 1fr;
+    }
+    @media @bw500 {
+        grid-template-areas: 
+            "scheme"
+            "legend"
+            "check"
+            "order";
+            grid-template-columns: 1fr;
+    }
 
     &__check {
-        grid-area: "check";
+        grid-area: check;
     }
     &__check-list {
         display: flex;
@@ -24,14 +42,30 @@
     &__scheme {
         display: flex;
         flex-direction: column;
-        grid-area: "scheme";
+        grid-area: scheme;
+    }
+    &__scheme-map {
+        // width: 100%;
+        // height: 100%;
+        width: 780px;
+        height: 399px;
+        @media @bw768 {
+            width: 628px;
+            height: 322px;
+        }
+        @media @bw500 {
+            // width: 280px;
+            // height: 144px;
+            width: 100%;
+            height: 100%;
+        }
     }
     &__header {
         align-self: center;
         margin-bottom: 40px;
     }
     &__order {
-        grid-area: "order";
+        grid-area: order;
         display: flex;
         flex-direction: column;
     }
@@ -57,7 +91,7 @@
         color: @white !important;
     }
     &__legend {
-        grid-area: "legend";
+        grid-area: legend;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -73,6 +107,9 @@
         flex-direction: row;
         gap: 9px;
         justify-content: flex-end;
+        @media @bw500 {
+            justify-content: flex-start;
+        }
     }
     &__legend-box-red {
         display: block;
