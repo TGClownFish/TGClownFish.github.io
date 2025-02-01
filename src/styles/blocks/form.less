@@ -3,6 +3,12 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px 60px;
+        @media @bw1170 {
+            gap: 30px 30px;
+        }
+        @media @bw500 {
+            gap: 30px 100px
+        }
     }
     &__field,
     &__group {
