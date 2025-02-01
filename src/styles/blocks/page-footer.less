@@ -1,14 +1,17 @@
 .page-footer {
     .container;
     padding-bottom: 75px;
+    margin-top: 150px;
     @media @bw1170 {
         padding-bottom: 60px;
+    }
+    @media @bw768 {
+        margin-top: 100px;
     }
     @media @bw600 {
         padding-bottom: 60px;
     }
     &__liners {
-        margin-top: 140px;
         display: flex;
         margin-bottom: 60px;
         gap: 100px;
@@ -17,6 +20,9 @@
         }
         @media @bw1020 {
             gap: 50px;
+        }
+        @media @bw500 {
+            gap: 20px
         }
         &::before,
         &::after {
@@ -28,10 +34,16 @@
         &::before {
             margin-right: 50px;
             background: linear-gradient(270deg, #1C1B1B 0%, rgba(255, 255, 255, 0) 82.86%);
+            @media @bw768 {
+                margin-right: 20px;
+            }
         }
         &::after {
             margin-left: 50px;
             background: linear-gradient(90deg, #1C1B1B 0%, rgba(255, 255, 255, 0) 100%);
+            @media @bw768 {
+                margin-left: 20px;
+            }
         }
     }
     &__block1 {
@@ -39,6 +51,9 @@
         gap: 50px;
         justify-content: space-between;
         margin-bottom: 60px;
+        @media @bw500 {
+            flex-direction: column;
+        }
     }
     &__block1-links {
         position: relative;
@@ -70,6 +85,9 @@
         }
         &:active {
             color: @red;
+        }
+        @media @bw500 {
+            font-size: 14px;
         }
     }
     &__block2 {
