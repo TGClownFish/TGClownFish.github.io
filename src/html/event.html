@@ -61,7 +61,7 @@
                     <div class="content">
                         <form class="reserve form">
                             <div class="reserve__check">
-                                <h5 class="">Забронировать столик</h5>
+                                <h5 class="reserve__header-h5">Забронировать столик</h5>
                                 <div class="reserve__check-list">
                                     <label class="check check">
                                         <input name="agree" type="checkbox" class="check__input--red check__input" checked/>
@@ -121,13 +121,13 @@
                                 </div>
                             </div>
                             <div class="reserve__scheme">
-                                <h5 class="reserve__header header__h4 header">Сцена</h5>
+                                <h4 class="reserve__scene">Сцена</h4>
                                 <svg class="reserve__scheme-map" width="780" height="399">
                                     <use xlink:href="assets/icons/symbols.svg#map"></use>
                                 </svg>
                             </div>
                             <div class="reserve__order">
-                                <h5>Ваши пригласительные билеты</h5>
+                                <h5 class="reserve__header-h5">Ваши пригласительные билеты</h5>
                                 <div class="reserve__order-items">
                                     <div class="reserve__order-item">
                                         <div class="reserve__order-item-amount">9 шт. | 1400</div>
@@ -145,7 +145,7 @@
                                 <a href="#" class="btn--red btn reserve__order-sum-buy">Купить билеты</a>
                             </div>
                             <div class="reserve__legend">
-                                <h5>Стоимость пригласительного билета</h5>
+                                <h5 class="reserve__header-h5">Стоимость пригласительного билета</h5>
                                 <div class="reserve__legend-lines">
                                     <div class="reserve__legend-line">
                                         <span class="reserve__legend-box-red"></span>
@@ -156,7 +156,7 @@
                                         <div class="reserve__legend-text">1250 ₽ | 1 персона</div>
                                     </div>
                                 </div>
-                                <h5>Примечание</h5>
+                                <h5 class="reserve__header-h5">Примечание</h5>
                                 <div class="reserve__legend-lines">
                                     <div class="reserve__legend-line">
                                         <span class="reserve__legend-circle-black"></span>
@@ -176,5 +176,14 @@
         </div>
         </main>
         @@include('blocks/page-footer.html')
+        <script src="scripts/jquery-3.7.1.min.js"></script>
+        <script src="scripts/jquery.selectric.min.js"></script>
+        <script src="scripts/jquery.mask.min.js"></script>
+        <script src="scripts/jquery.validate.min.js"></script>
+        <script src="scripts/jquery.validate-init.js"></script>
+        <script src="scripts/air-datepicker.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+        <script src="scripts/swiper.min.js"></script>
+        <script src="scripts/main.min.js"></script>
 	</body>
 </html>

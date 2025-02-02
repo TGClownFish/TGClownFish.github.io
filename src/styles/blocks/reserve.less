@@ -26,6 +26,37 @@
             "order";
             grid-template-columns: 1fr;
     }
+    &__scene {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        // margin-left: auto;
+        // margin-right: auto;
+        background-color: @black;
+        text-transform: uppercase;
+        font-family: @font2;
+        color: @white;
+        width: 162px;
+        height: 34px;
+        font-size: 16px !important;
+        padding: 6px;
+        font-family: @font1;
+        margin-bottom: 40px !important;
+        align-self: center;
+        @media @bw768 {
+            font-size: 11px !important;
+            font-weight: 700;
+            width: 130px;
+            height: 27px;
+        }
+    }
+    &__header-h5 {
+        font-weight: 700;
+        font-size: 18px;
+        @media @bw768 {
+            font-size: 16px;
+        }
+    }
 
     &__check {
         grid-area: check;
@@ -38,6 +69,9 @@
     &__check-label {
         font-size: 16px;
         font-weight: 400;
+        @media @bw500 {
+            font-size: 14px;
+        }
     }
     &__scheme {
         display: flex;
@@ -77,7 +111,19 @@
     &__order-item {
         display: flex;
         flex-direction: row;
-        gap: 224px;
+    }
+    &__order-item-amount {
+        @media @bw500 {
+            font-size: 14px;
+        }
+    }
+    &__order-item-sum {
+        margin-left: auto;
+        font-size: 18px;
+        font-weight: 600;
+        @media @bw768 {
+            font-size: 16px;
+        }
     }
     &__order-sum-wrapper {
         display: flex;
@@ -86,6 +132,9 @@
         font-size: 20px;
         gap: 33.33px;
         margin: 25px auto 53px;
+        @media @bw500 {
+            font-size: 18px;
+        }
     }
     &__order-sum-buy {
         color: @white !important;
@@ -95,7 +144,9 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        
+        @media @bw500 {
+            align-items: flex-start;
+        }
     }
     &__legend-lines {
         display: flex;
@@ -109,6 +160,11 @@
         justify-content: flex-end;
         @media @bw500 {
             justify-content: flex-start;
+        }
+    }
+    &__legend-text {
+        @media @bw500 {
+            font-size: 14px;
         }
     }
     &__legend-box-red {
