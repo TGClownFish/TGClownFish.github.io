@@ -1,7 +1,10 @@
 .about {
     &__container {
         .container;
-        
+        // @media @bw500 {
+        //     padding-left: 0px;
+        //     padding-right: 0px;
+        // }
     }
     &__header {
         margin-top: 200px;
@@ -90,6 +93,10 @@
         @media @bw500 {
             margin-left: 0px;
             margin-right: 20px;
+            max-width: 500px;
+        }
+        @media @bw320 {
+            max-width: 280px;
         }
     }
     &__br {
@@ -177,8 +184,15 @@
         left: 49px;
         width: calc(100% - 57px);
         object-fit: contain;
+        @media @bw768 {
+            width: calc(100% - 36px);
+            left: 29px;
+            top: 14px;
+        }
         @media @bw500 {
-            width: calc(100% - 11px);
+            width: calc(100% - 13px);
+            left: 11px;
+            top: 5px;
         }
     }
     &__block3-link {
@@ -202,12 +216,21 @@
         margin: 0;
         max-width: 345px;
         margin-bottom: 0px;
+        @media @bw768 {
+            font-size: 16px;
+        }
     }
     &__block3-link-text {
         align-self: center;
         text-decoration: none;
         font-weight: 600;
         font-size: 18px;
+        @media @bw768 {
+            font-size: 16px;
+        }
+        @media @bw500 {
+            font-size: 14px;
+        }
     }
     &__block3-link-arrow {
         margin-right: 0px;
