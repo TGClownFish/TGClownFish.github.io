@@ -1,8 +1,20 @@
 .upcoming {
   padding-top: 75px;
-  padding-bottom: 90px;
+  padding-bottom: 100px;
   background-color: @white;
-  
+  @media @bw1340 {
+    padding-top: 55px;
+    padding-bottom: 90px;
+  }
+  @media @bw768 {
+    padding-top: 60px;
+    padding-bottom: 75px;
+  }
+  @media @bw500 {
+    padding-top: 25px;
+    padding-bottom: 95px;
+  }
+
   &__container {
     .container;
   }
@@ -10,11 +22,14 @@
     display: flex;
     flex-direction: row;
     margin-top: 90px;
+    @media @bw1340 {
+      margin-top: 100px;
+    }
     @media @bw768 {
-      margin-top: 130px;
+      margin-top: 50px;
     }
     @media @bw500 {
-      margin-top: 100px;
+      margin-top: 60px;
     }
   }
   &__triangle-top-1 {
@@ -23,23 +38,38 @@
     border-style: solid;
     border-width: 30px 0 0 calc(35vw);
     border-color: transparent transparent transparent @white;
+    @media @bw768 {
+      border-width: 20px 0 0 calc(35vw);
+    }
+    @media @bw500 {
+      border-width: 15px 0 0 calc(35vw);
+    }
   }
   &__triangle-top-2 {
     width: 0px;
-   height: 0px;
-   border-style: solid;
-   border-width: 0 0 30px calc(65vw);
-   border-color: transparent transparent @white transparent;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 0 30px calc(65vw);
+    border-color: transparent transparent @white transparent;
+    @media @bw768 {
+      border-width: 0 0 20px calc(65vw);
+    }
+    @media @bw500 {
+      border-width: 0 0 15px calc(65vw);
+    }
   }
   &__triangle-bottom {
     display: flex;
     flex-direction: row;
     margin-bottom: 64px;
+    @media @bw1340 {
+      margin-bottom: 70px;
+    }
     @media @bw768 {
-      margin-top: 130px;
+      margin-bottom: 35px;
     }
     @media @bw500 {
-      margin-top: 100px;
+      margin-bottom: 41px;
     }
   }
   &__triangle-bottom-1 {
@@ -48,13 +78,25 @@
     border-style: solid;
     border-width: 30px calc(64vw) 0 0;
     border-color: @white transparent transparent transparent;
+    @media @bw768 {
+      border-width: 20px calc(64vw) 0 0;
+    }
+    @media @bw500 {
+      border-width: 15px calc(64vw) 0 0;
+    }
   }
   &__triangle-bottom-2 {
     width: 0px;
-   height: 0px;
-   border-style: solid;
-   border-width: 0 calc(36vw) 30px 0;
-   border-color: transparent @white  transparent transparent;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 calc(36vw) 30px 0;
+    border-color: transparent @white transparent transparent;
+    @media @bw768 {
+      border-width: 0 calc(36vw) 20px 0;
+    }
+    @media @bw500 {
+      border-width: 0 calc(36vw) 15px 0;
+    }
   }
   &__header {
     margin-bottom: 150px;
@@ -98,7 +140,7 @@
     &--left {
       transform: scaleX(-1);
     }
-    @media @bw500 {
+    @media @bw768 {
       padding-left: 0px;
       padding-right: 0px;
       margin-left: 0px;
