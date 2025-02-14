@@ -64,7 +64,7 @@
     max-width: 100%;
     margin: 70px auto 0;
     @media @bw1340 {
-      width: 300px;
+      width: 474px;
     }
     @media @bw768 {
       margin: 60px auto 0;
@@ -73,14 +73,18 @@
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    //flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     bottom: auto;
     left: auto;
     width: auto;
-    margin: 0 auto;
+    margin: 0 120px;
     padding: 0 15px;
+    @media @bw1340 {
+      margin: 0 96px;
+    }
   }
   .swiper-pagination-bullet {
     width: 15px;
